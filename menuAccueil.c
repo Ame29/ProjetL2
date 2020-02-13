@@ -6,14 +6,14 @@
 // Programme principal
 int main(void){
 	int choix;	// Choix de l'utilisateur
-
+	system("clear");
 	do{	// Affichage du menu
 		printf("\n	Meli Melo :\n\n Veuillez choisir un mode de jeu: \n\n");
 		printf(" 1 - Solo\n");
 		printf(" 2 - Contre-la-montre\n");
 		printf(" 3 - Multijoueur\n");
 		printf(" 4 - Quitter\n");
-		printf("Votre choix : ");
+		printf(" Votre choix : ");
 		scanf("%i",&choix);
     printf("\n");
 		system("clear");
@@ -28,6 +28,6 @@ int main(void){
 		}
 	}
 	while(choix!=4);
-	printf("Merci d'avoir jouer à une prochaine fois!\n");
+	printf("Merci d'avoir jouer à une prochaine fois!\n\n");
 	return 0;
 }

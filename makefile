@@ -1,3 +1,4 @@
+
 testMenu: menuAccueil.o fonction.o menuSolo.o menuCLM.o
 	gcc menuAccueil.o menuSolo.o fonction.o menuCLM.o -o testMenu
 

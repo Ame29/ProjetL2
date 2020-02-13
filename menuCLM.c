@@ -15,7 +15,7 @@ void menuCLMTheme(){
 		printf(" 3 - Ville\n");
 		printf(" 4 - Metier\n");
 		printf(" 5 - Retour\n");
-		printf("Votre choix : ");
+		printf(" Votre choix : ");
 		scanf("%i", &choix);
     printf("\n");
 	  system("clear");
@@ -42,7 +42,7 @@ void menuCLMDifficulte(){
 		printf(" 2 - Moyen (2:30)\n");
 		printf(" 3 - Difficile(1:00)\n");
 		printf(" 4 - Retour\n");
-		printf("Votre choix : ");
+		printf(" Votre choix : ");
 		scanf("%i", &choix);
     printf("\n");
 	  system("clear");
@@ -68,14 +68,14 @@ void menuCLMSauvegarde(){
 		printf(" 2 - Nouvelle partie\n");
 		printf(" 3 - Charger une partie\n");
 		printf(" 4 - Retour\n");
-		printf("Votre choix : ");
+		printf(" Votre choix : ");
 		scanf("%i", &choix);
     printf("\n");
 	  system("clear");
 
 		//Traitement du choix de l'utilisateur
 		switch(choix){
-      case 1: WorkInProgress(); break;
+      case 1: descriptionCLM(); break;
 			case 2: menuCLMDifficulte(); break;
 			case 3:	WorkInProgress(); break;
 			case 4: break;

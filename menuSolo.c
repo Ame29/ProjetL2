@@ -15,7 +15,7 @@ void menuSoloTheme(){
 		printf(" 3 - Ville\n");
 		printf(" 4 - Metier\n");
 		printf(" 5 - Retour\n");
-		printf("Votre choix : ");
+		printf(" Votre choix : ");
 		scanf("%i", &choix);
     printf("\n");
 	  system("clear");
@@ -42,7 +42,7 @@ void menuSoloDifficulte(){
 		printf(" 2 - Moyen\n");
 		printf(" 3 - Difficile\n");
 		printf(" 4 - Retour\n");
-		printf("Votre choix : ");
+		printf(" Votre choix : ");
 		scanf("%i", &choix);
     printf("\n");
 	  system("clear");
@@ -68,14 +68,14 @@ void menuSoloSauvegarde(){
 		printf(" 2 - Nouvelle partie\n");
 		printf(" 3 - Charger une partie\n");
 		printf(" 4 - Retour\n");
-		printf("Votre choix : ");
+		printf(" Votre choix : ");
 		scanf("%i", &choix);
     printf("\n");
 	  system("clear");
 
 		//Traitement du choix de l'utilisateur
 		switch(choix){
-      case 1: WorkInProgress(); break;
+      case 1: descriptionSolo(); break;
 			case 2: menuSoloDifficulte(); break;
 			case 3:	WorkInProgress(); break;
 			case 4: break;
