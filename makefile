@@ -1,20 +1,14 @@
 
-testMenu: menuAccueil.o fonctionMenu.o menuSolo.o menuCLM.o
-	gcc menuAccueil.o menuSolo.o fonctionMenu.o menuCLM.o -o testMenu
+OPTS=-Wall
 
-menuAccueil.o: menuAccueil.c fonctionMenu.h menuSolo.h menuCLM.h
-	gcc -o menuAccueil.o -c menuAccueil.c
-
-fonctionMenu.o: fonctionMenu.c
-	gcc -o fonctionMenu.o -c fonctionMenu.c
-
-menuSolo.o: menuSolo.c fonctionMenu.h
-	gcc -o menuSolo.o -c menuSolo.c
-
-menuCLM.o: menuCLM.c fonctionMenu.h
-	gcc -o menuCLM.o -c menuCLM.c
-
-clean:
-	rm -rf *.o
-
-mrproper: clean
+MotsMeles : manipmatrice.o  manipDirectionPlacement.o maniphasard.o main.o
+	gcc manipmatrice.o  manipDirectionPlacement.o maniphasard.o main.o -o MotsMeles ${OPTS}
+main.o : main.c
+	gcc -c main.c ${OPTS}
+manipmatrice.o : manipmatrice.c
+	gcc -c manipmatrice.c ${OPTS}
+manipDirectionPlacement.o : manipDirectionPlacement.c
+	gcc -c manipDirectionPlacement.c ${OPTS}
+maniphasard.o : maniphasard.c
+	gcc -c maniphasard.c ${OPTS}
+	
