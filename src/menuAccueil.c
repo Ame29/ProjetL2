@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "fonctionMenu.h"
-#include "menuSolo.h"
-#include "menuCLM.h"
+#include "../lib/fonctionMenu.h"
+#include "../lib/menuSolo.h"
+#include "../lib/menuCLM.h"
 // Programme principal
 int main(void){
 	int choix;	// Choix de l'utilisateur
