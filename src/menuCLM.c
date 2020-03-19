@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "fonctionMenu.h"
+#include "../lib/fonctionMenu.h"
 #define FACILE 10
 #define MOYEN 14
 #define DIFFICILE 18
