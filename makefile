@@ -3,7 +3,7 @@ OPTS=-Wall
 
 MotsMeles : manipmatrice.o  manipDirectionPlacement.o maniphasard.o main.o
 	gcc manipmatrice.o  manipDirectionPlacement.o maniphasard.o main.o -o MotsMeles ${OPTS}
-main.o : MainPlacementUnMot.c
+main.o : src/MainPlacementUnMot.c
 	gcc -c MainPlacementUnMot.c ${OPTS}
 manipmatrice.o : ManipMatrice.c
 	gcc -c ManipMatrice.c ${OPTS}
