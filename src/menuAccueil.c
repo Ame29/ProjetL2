@@ -3,6 +3,9 @@
 #include "../lib/fonctionMenu.h"
 #include "../lib/menuSolo.h"
 #include "../lib/menuCLM.h"
+
+//MEMO pour les makefile OPTS=-Wall ${OPTS}
+
 // Programme principal
 int main(void){
 	int choix;	// Choix de l'utilisateur
