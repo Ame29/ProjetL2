@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include "../lib/fonctionGrille.h"
+#include "../lib/commun.h"
 
-int N;
-
-int main()
+int main(void)
 {
-	N = 10; // Difficulté
+
 
 	srand(time(NULL));
 
 	//DifficulteGrille();
 
-	char mat[N][N];
+	char mat[N_TEST][N_TEST];
 
 	int i = 0 ;
 
@@ -20,12 +20,12 @@ int main()
 
 	initGrille(mat);
 
-	PlacerMot(mat);
+	//PlacerMot(mat);
 
-	printf("\n") ;
+	//printf("\n") ;
 
-	RemplirCaseMatVide(mat);
+	//RemplirCaseMatVide(mat);
 
-	AfficherGrille(mat);
+	affGrille(mat);
 
 }
