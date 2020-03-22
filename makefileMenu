@@ -1,4 +1,4 @@
-testMenu: menuAccueil.o fonctionMenu.o menuSolo.o menuCLM.o
+bin/testMenu: menuAccueil.o fonctionMenu.o menuSolo.o menuCLM.o
 	gcc menuAccueil.o menuSolo.o fonctionMenu.o menuCLM.o -o testMenu
 
 menuAccueil.o: src/menuAccueil.c lib/fonctionMenu.h lib/menuSolo.h lib/menuCLM.h

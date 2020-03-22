@@ -4,4 +4,5 @@
 void menuSoloDifficulte();
 void menuSoloTheme();
 void menuSoloSauvegarde();
+
 #endif

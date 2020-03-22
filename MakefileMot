@@ -1,14 +1,13 @@
+bin/testGrille : grilleValide.o  fonctionGrille.o
+	gcc  grilleValide.o  fonctionGrille.o -o ./bin/testGrille
 
-OPTS=-Wall
+grilleValide.o: src/grilleValide.c lib/fonctionGrille.h
+	gcc -o grilleValide.o -c src/grilleValide.c
 
-./bin/MotsMeles : manipmatrice.o  manipDirectionPlacement.o maniphasard.o main.o
-	gcc manipmatrice.o  manipDirectionPlacement.o maniphasard.o main.o -o ./bin/MotsMeles ${OPTS}
-main.o : ./src/MainPlacementUnMot.c
-	gcc -c ./src/MainPlacementUnMot.c ${OPTS}
-manipmatrice.o : ./src/ManipMatrice.c
-	gcc -c ./src/ManipMatrice.c ${OPTS}
-manipDirectionPlacement.o : ./src/ManipDirectionPlacement.c
-	gcc -c ./src/ManipDirectionPlacement.c ${OPTS}
-maniphasard.o : ./src/ManipHasard.c
-	gcc -c ./src/ManipHasard.c ${OPTS}
-	
+fonctionGrille.o: src/fonctionGrille.c
+	gcc -o fonctionGrille.o -c src/fonctionGrille.c
+
+clean:
+	rm -rf *.o
+
+mrproper: clean
