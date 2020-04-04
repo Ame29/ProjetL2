@@ -1,3 +1,11 @@
+/**
+ * \file fonctionGrille.c
+ * \brief Contient toutes les fonctions utiles à l'initialisation de la grille de jeu
+ * \author Quentin Bellanger
+ * \version 1
+ * \date 01 avril 2020
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -5,7 +13,13 @@
 #include <math.h>
 #include "../lib/commun.h"
 
-/*Remplit une matrice de Taille N*/
+
+/**
+ * \fn void initGrille(char matrice[N_TEST][N_TEST])
+ * \brief Remplit une matrice du caractère avec le caractère '*'
+ * \param char matrice[N_TEST][N_TEST]
+ * \return rien
+ */
 void initGrille(char matrice[N_TEST][N_TEST]){
 	int i, j ;
 
@@ -18,7 +32,12 @@ void initGrille(char matrice[N_TEST][N_TEST]){
 	}
 }
 
-/*Affiche la matrice "matrice" */
+/**
+ * \fn void affGrille(char matrice[N_TEST][N_TEST])
+ * \brief Affiche la matrice passé en paramètre.
+ * \param char matrice[N_TEST][N_TEST]
+ * \return rien
+ */
 void affGrille(char matrice[N_TEST][N_TEST]){
 	int i, j ;
 
@@ -32,13 +51,22 @@ void affGrille(char matrice[N_TEST][N_TEST]){
 	}
 }
 
-/*Renvoie un nombre aléatoire entre 0 et "limMax-1" */
+/**
+ * \fn int nombreAleatoire(int limMax)
+ * \brief Renvoie un nombre entre 0 et limMax-1
+ * \param int limMax
+ * \return Valeur entière entre 0 et limMas-1
+ */
 int nombreAleatoire(int limMax){
-
 	return (rand() % limMax);
 }
 
-/* Remplace tous les caractère "*" par des lettre minuscule quelconque */
+/**
+ * \fn void voidToChar(char matrice[N_TEST][N_TEST])
+ * \brief Remplace chaque caractère '*' d'une matrice de caractère par une lettre minuscule aléatoire
+ * \param char matrice[N_TEST][N_TEST]
+ * \return rien
+ */
 void voidToChar(char matrice[N_TEST][N_TEST]){
 	int i, j ;
 
@@ -70,7 +98,13 @@ int DifficulteGrille(){
 }
 */
 
-/* Récupère un mot dans le fichier texte "nomFichier" */
+/**
+ * \fn int tirerMot(char * nomFichier, char * motTire)
+ * \brief affecte à un pointeur sur char un mot du fichier * nomFichier
+ * \param char * nomFichier, char * motTire
+ * \return 1 si un problème survient, 0 sinon
+ */
+
 int tirerMot(char * nomFichier, char * motTire){
 	FILE * fichier = NULL;
 	int nbrMots = 0, numMot = 0, charLu;
@@ -108,10 +142,15 @@ int tirerMot(char * nomFichier, char * motTire){
 	fgets(motTire, 100, fichier);
 	printf("Le mot numéro %i est %s\n", indiceMot+1, motTire);
 	fclose(fichier);
-	return 0 ;
+	return 0;
 }
 
-/* Place un mot dans la grille dans n'importe quel sens */
+/**
+ * \fn void PlacerMot(char matrix[N_TEST][N_TEST])
+ * \brief place un mot dans la grille
+ * \param char matrix[N_TEST][N_TEST]
+ * \return rien
+ */
 void PlacerMot(char matrix[N_TEST][N_TEST]){
     int i, j, k = 0;
 		int compteur;

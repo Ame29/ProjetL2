@@ -1,3 +1,11 @@
+/**
+ * \file fonctionGrille.h
+ * \brief header contenant les prototype des fonctions utiles à la génération de la grille de jeu.
+ * \author Quentin Bellanger
+ * \version 1
+ * \date 01 avril 2020
+ */
+
 #ifndef GRILLE
 #define GRILLE
 

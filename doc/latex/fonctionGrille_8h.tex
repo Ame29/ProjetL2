@@ -1,0 +1,135 @@
+\hypertarget{fonctionGrille_8h}{}\section{lib/fonction\+Grille.h File Reference}
+\label{fonctionGrille_8h}\index{lib/fonction\+Grille.\+h@{lib/fonction\+Grille.\+h}}
+
+
+header contenant les prototype des fonctions utiles à la génération de la grille de jeu.  
+
+
+{\ttfamily \#include \char`\"{}commun.\+h\char`\"{}}\newline
+Include dependency graph for fonction\+Grille.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{fonctionGrille_8h_a427152203ef5fcb375070d6620d4f920}{init\+Grille} (char matrice\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]})
+\begin{DoxyCompactList}\small\item\em Remplit une matrice du caractère avec le caractère \textquotesingle{}$\ast$\textquotesingle{}. \end{DoxyCompactList}\item 
+void \hyperlink{fonctionGrille_8h_a5cd0bdbe388e0957a6b30a3fe470298b}{aff\+Grille} (char matrice\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]})
+\begin{DoxyCompactList}\small\item\em Affiche la matrice passé en paramètre. \end{DoxyCompactList}\item 
+int \hyperlink{fonctionGrille_8h_af411fce46388648066f379d96f490281}{nombre\+Aleatoire} (int lim\+Max)
+\begin{DoxyCompactList}\small\item\em Renvoie un nombre entre 0 et lim\+Max-\/1. \end{DoxyCompactList}\item 
+void \hyperlink{fonctionGrille_8h_a7129b8b4d648a4af7eec64a5134439ce}{void\+To\+Char} (char matrice\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]})
+\begin{DoxyCompactList}\small\item\em Remplace chaque caractère \textquotesingle{}$\ast$\textquotesingle{} d\textquotesingle{}une matrice de caractère par une lettre minuscule aléatoire. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{fonctionGrille_8h_a302b606bfe4671913b3089a65cd2bee7}\label{fonctionGrille_8h_a302b606bfe4671913b3089a65cd2bee7}} 
+int {\bfseries Tirer\+Mot} (char $\ast$nom\+Fichier)
+\item 
+void \hyperlink{fonctionGrille_8h_af38e92503cf6dd2f961a47b33b3cf2e4}{Placer\+Mot} (char matrix\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]})
+\begin{DoxyCompactList}\small\item\em place un mot dans la grille \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+header contenant les prototype des fonctions utiles à la génération de la grille de jeu. 
+
+\begin{DoxyAuthor}{Author}
+Quentin Bellanger 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+01 avril 2020 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{fonctionGrille_8h_a5cd0bdbe388e0957a6b30a3fe470298b}\label{fonctionGrille_8h_a5cd0bdbe388e0957a6b30a3fe470298b}} 
+\index{fonction\+Grille.\+h@{fonction\+Grille.\+h}!aff\+Grille@{aff\+Grille}}
+\index{aff\+Grille@{aff\+Grille}!fonction\+Grille.\+h@{fonction\+Grille.\+h}}
+\subsubsection{\texorpdfstring{aff\+Grille()}{affGrille()}}
+{\footnotesize\ttfamily void aff\+Grille (\begin{DoxyParamCaption}\item[{char}]{matrice\mbox{[}\+N\+\_\+\+T\+E\+S\+T\mbox{]}\mbox{[}\+N\+\_\+\+T\+E\+S\+T\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Affiche la matrice passé en paramètre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & matrice\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fonctionGrille_8h_a427152203ef5fcb375070d6620d4f920}\label{fonctionGrille_8h_a427152203ef5fcb375070d6620d4f920}} 
+\index{fonction\+Grille.\+h@{fonction\+Grille.\+h}!init\+Grille@{init\+Grille}}
+\index{init\+Grille@{init\+Grille}!fonction\+Grille.\+h@{fonction\+Grille.\+h}}
+\subsubsection{\texorpdfstring{init\+Grille()}{initGrille()}}
+{\footnotesize\ttfamily void init\+Grille (\begin{DoxyParamCaption}\item[{char}]{matrice\mbox{[}\+N\+\_\+\+T\+E\+S\+T\mbox{]}\mbox{[}\+N\+\_\+\+T\+E\+S\+T\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Remplit une matrice du caractère avec le caractère \textquotesingle{}$\ast$\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & matrice\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fonctionGrille_8h_af411fce46388648066f379d96f490281}\label{fonctionGrille_8h_af411fce46388648066f379d96f490281}} 
+\index{fonction\+Grille.\+h@{fonction\+Grille.\+h}!nombre\+Aleatoire@{nombre\+Aleatoire}}
+\index{nombre\+Aleatoire@{nombre\+Aleatoire}!fonction\+Grille.\+h@{fonction\+Grille.\+h}}
+\subsubsection{\texorpdfstring{nombre\+Aleatoire()}{nombreAleatoire()}}
+{\footnotesize\ttfamily int nombre\+Aleatoire (\begin{DoxyParamCaption}\item[{int}]{lim\+Max }\end{DoxyParamCaption})}
+
+
+
+Renvoie un nombre entre 0 et lim\+Max-\/1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & lim\+Max \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valeur entière entre 0 et lim\+Mas-\/1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fonctionGrille_8h_af38e92503cf6dd2f961a47b33b3cf2e4}\label{fonctionGrille_8h_af38e92503cf6dd2f961a47b33b3cf2e4}} 
+\index{fonction\+Grille.\+h@{fonction\+Grille.\+h}!Placer\+Mot@{Placer\+Mot}}
+\index{Placer\+Mot@{Placer\+Mot}!fonction\+Grille.\+h@{fonction\+Grille.\+h}}
+\subsubsection{\texorpdfstring{Placer\+Mot()}{PlacerMot()}}
+{\footnotesize\ttfamily void Placer\+Mot (\begin{DoxyParamCaption}\item[{char}]{matrix\mbox{[}\+N\+\_\+\+T\+E\+S\+T\mbox{]}\mbox{[}\+N\+\_\+\+T\+E\+S\+T\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+place un mot dans la grille 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & matrix\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fonctionGrille_8h_a7129b8b4d648a4af7eec64a5134439ce}\label{fonctionGrille_8h_a7129b8b4d648a4af7eec64a5134439ce}} 
+\index{fonction\+Grille.\+h@{fonction\+Grille.\+h}!void\+To\+Char@{void\+To\+Char}}
+\index{void\+To\+Char@{void\+To\+Char}!fonction\+Grille.\+h@{fonction\+Grille.\+h}}
+\subsubsection{\texorpdfstring{void\+To\+Char()}{voidToChar()}}
+{\footnotesize\ttfamily void void\+To\+Char (\begin{DoxyParamCaption}\item[{char}]{matrice\mbox{[}\+N\+\_\+\+T\+E\+S\+T\mbox{]}\mbox{[}\+N\+\_\+\+T\+E\+S\+T\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Remplace chaque caractère \textquotesingle{}$\ast$\textquotesingle{} d\textquotesingle{}une matrice de caractère par une lettre minuscule aléatoire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & matrice\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}

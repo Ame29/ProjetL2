@@ -1,3 +1,11 @@
+/**
+ * \file menuAccueil.c
+ * \brief Menu principale du jeu
+ * \author Quentin Bellanger
+ * \version 1
+ * \date 01 avril 2020
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "../lib/fonctionMenu.h"
@@ -6,7 +14,11 @@
 
 //MEMO pour les makefile OPTS=-Wall ${OPTS}
 
-// Programme principal
+/**
+ * \fn int main(void))
+ * \brief entrée du programme
+ * \return rien
+ */
 int main(void){
 	int choix;	// Choix de l'utilisateur
 	system("clear");
