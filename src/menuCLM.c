@@ -1,3 +1,11 @@
+/**
+ * \file menuCLM.c
+ * \brief Sous-menu du mode "contre le montre"
+ * \author Quentin Bellanger
+ * \version 1
+ * \date 01 avril 2020
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "../lib/fonctionMenu.h"
@@ -5,7 +13,12 @@
 #define MOYEN 14
 #define DIFFICILE 18
 
-void menuCLMTheme(){
+/**
+ * \fn void menuCLMTheme(void)
+ * \brief Sous-menu des thèmes du mode "contre le montre"
+ * \return rien
+ */
+void menuCLMTheme(void){
 	int choix;	// Choix de l'utilisateur
 
 	do{	// Affichage du menu
@@ -33,7 +46,12 @@ void menuCLMTheme(){
 	while(choix!=5);
 }
 
-void menuCLMDifficulte(){
+/**
+ * \fn void menuCLMDifficulte(void)
+ * \brief Sous-menu de la difficulté du mode "contre le montre"
+ * \return rien
+ */
+void menuCLMDifficulte(void){
 	int choix;	// Choix de l'utilisateur
 
 	do{	// Affichage du menu
@@ -58,8 +76,13 @@ void menuCLMDifficulte(){
 	}
 	while(choix!=4);
 }
-// Programme principal
-void menuCLMSauvegarde(){
+
+/**
+ * \fn void menuCLMSauvegarde(void)
+ * \brief Premier sous-menu du mode "contre le montre"
+ * \return rien
+ */
+void menuCLMSauvegarde(void){
 	int choix;	// Choix de l'utilisateur
 
 	do{	// Affichage du menu

@@ -1,8 +1,22 @@
+/**
+ * \file fonctionMenu.c
+ * \brief Contient toutes les fonctions utiles pour les menus
+ * \author Quentin Bellanger
+ * \version 1
+ * \date 01 avril 2020
+ */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 
-//affiche un message avertissant de l'indisponibilité d'une fonctionnalité
+/**
+ * \fn void WorkInProgress(void)
+ * \brief Affiche un message d'erreur
+ * \param void
+ * \return rien
+ */
 void WorkInProgress(void){
 	int choix;
 	do{
@@ -16,6 +30,12 @@ void WorkInProgress(void){
 
 }
 
+/**
+ * \fn void descriptionSolo(void)
+ * \brief Décrit le fonctionnement du mode de jeu "solo"
+ * \param void
+ * \return rien
+ */
 void descriptionSolo(void){
 	int choix;
 	do{
@@ -30,6 +50,12 @@ void descriptionSolo(void){
 	system("clear");
 }
 
+/**
+ * \fn void descriptionCLM(void)
+ * \brief Décrit le fonctionnement du mode de jeu "contre la montre"
+ * \param void
+ * \return rien
+ */
 void descriptionCLM(void){
 	int choix;
 	do{

@@ -1,3 +1,11 @@
+/**
+ * \file menuSolo.c
+ * \brief Sous menu du mode "solo"
+ * \author Quentin Bellanger
+ * \version 1
+ * \date 01 avril 2020
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "../lib/fonctionMenu.h"
@@ -5,6 +13,11 @@
 #define MOYEN 14
 #define DIFFICILE 18
 
+/**
+ * \fn void menuSoloTheme(void)
+ * \brief Sous-menu des thèmes du mode "solo"
+ * \return rien
+ */
 void menuSoloTheme(){
 	int choix;	// Choix de l'utilisateur
 
@@ -33,6 +46,11 @@ void menuSoloTheme(){
 	while(choix!=5);
 }
 
+/**
+ * \fn void menuSoloDifficulte(void)
+ * \brief Sous-menu de la difficulté du mode "solo"
+ * \return rien
+ */
 void menuSoloDifficulte(){
 	int choix;	// Choix de l'utilisateur
 
@@ -58,7 +76,12 @@ void menuSoloDifficulte(){
 	}
 	while(choix!=4);
 }
-// Programme principal
+
+/**
+ * \fn void menuSoloSauvegarde(void)
+ * \brief Premier sous-menu du mode "solo"
+ * \return rien
+ */
 void menuSoloSauvegarde(){
 	int choix;	// Choix de l'utilisateur
 

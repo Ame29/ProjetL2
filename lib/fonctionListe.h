@@ -1,3 +1,10 @@
+/**
+ * \file fonctionListe.h
+ * \brief header contenant les prototype des fonctions utiles à la liste.
+ * \author Quentin Bellanger
+ * \version 1
+ * \date 01 avril 2020
+ */
 #ifndef LISTE
 #define LISTE
 
