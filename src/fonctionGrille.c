@@ -1,7 +1,7 @@
 /**
  * \file fonctionGrille.c
  * \brief Contient toutes les fonctions utiles à l'initialisation de la grille de jeu
- * \author Quentin Bellanger
+ * \author Asmae Bouhandi
  * \version 1
  * \date 01 avril 2020
  */
