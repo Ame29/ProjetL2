@@ -9,6 +9,8 @@
 #ifndef SOLO
 #define SOLO
 
+#include "fonctionGrille.h"
+
 void menuSoloDifficulte();
 void menuSoloTheme();
 void menuSoloSauvegarde();

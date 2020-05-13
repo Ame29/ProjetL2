@@ -1,18 +1,18 @@
 #include <stdio.h>
 
+typedef struct mot_s{
+    char mot[5];
+    int x_debut;
+    int y_debut;
+    int x_fin;
+    int y_fin;
+    int taille_mot;
+}mot_t;
+
 void selection_mot(){
     char tab[10][10];
     int x_joueur;
     int y_joueur;
-    
-    typedef struct mot_s{
-        char mot[5];
-        int x_debut;
-        int y_debut;
-        int x_fin;
-        int y_fin;
-        int taille_mot;
-    }mot_t;
     
     tab[0][0]='s';
     tab[0][1]='a';

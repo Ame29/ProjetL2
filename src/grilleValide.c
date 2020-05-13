@@ -20,7 +20,21 @@
 int main(void){
 	srand(time(NULL));
 	int i;
+	char themefile[50] = "./themes/theme_animal.txt" ;
+
+	// char mot[20] ;
+	// TirerMot(themefile, mot) ;
+
 	char mat[N_TEST][N_TEST];
+
 	initGrille(mat);
-	PlacerMot(mat);
+	//affGrille(mat);
+	//printf("\n");
+
+	PlacerMot(mat, themefile);
+	affGrille(mat);
+	printf("\n");
+
+	voidToChar(mat);
+	affGrille(mat);
 }

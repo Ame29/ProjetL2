@@ -9,6 +9,8 @@
 #ifndef CONTRE_LA_MONTRE
 #define CONTRE_LA_MONTRE
 
+#include "fonctionGrille.h"
+
 void menuCLMDifficulte();
 void menuCLMTheme();
 void menuCLMSauvegarde();
