@@ -1,4 +1,14 @@
 var searchData=
 [
-  ['tirermot',['tirerMot',['../fonctionGrille_8c.html#a433b3d8c776a3f6e1092962acf6a8231',1,'fonctionGrille.c']]]
+  ['on_5fbtn_5fclicked',['on_btn_clicked',['../gui_8c.html#ab3e825d1cbd389c18d727c9a2517e3a5',1,'on_btn_clicked(GtkWidget *button, gpointer *data):&#160;gui.c'],['../gui_8h.html#ab3e825d1cbd389c18d727c9a2517e3a5',1,'on_btn_clicked(GtkWidget *button, gpointer *data):&#160;gui.c']]],
+  ['on_5fdifficulte',['on_difficulte',['../gui_8c.html#a266b2bb6a6026904c572cc3d12ff5e12',1,'on_difficulte(GtkWidget *button, gpointer *difficulte):&#160;gui.c'],['../gui_8h.html#a266b2bb6a6026904c572cc3d12ff5e12',1,'on_difficulte(GtkWidget *button, gpointer *difficulte):&#160;gui.c']]],
+  ['on_5ffin',['on_fin',['../gui_8c.html#a4289f5f6910d14d1b6df82de3789f355',1,'on_fin(GtkWidget *button):&#160;gui.c'],['../gui_8h.html#a4289f5f6910d14d1b6df82de3789f355',1,'on_fin(GtkWidget *button):&#160;gui.c']]],
+  ['on_5fimport_5fsave',['on_import_save',['../gui_8c.html#ae59d7b69511a5255161eee3fbabc4f2d',1,'on_import_save(GtkWidget *button_menu, gpointer *data):&#160;gui.c'],['../gui_8h.html#ae59d7b69511a5255161eee3fbabc4f2d',1,'on_import_save(GtkWidget *button_menu, gpointer *data):&#160;gui.c']]],
+  ['on_5fmenu_5fmain',['on_menu_main',['../gui_8c.html#a71034251feba50687acede3ab9720af4',1,'on_menu_main(GtkWidget *button):&#160;gui.c'],['../gui_8h.html#a71034251feba50687acede3ab9720af4',1,'on_menu_main(GtkWidget *button):&#160;gui.c']]],
+  ['on_5fmenu_5fwin',['on_menu_win',['../gui_8c.html#a01cd2f4b7d4f3c8b92c95d3b2a2d41c2',1,'on_menu_win(GtkWidget *button):&#160;gui.c'],['../gui_8h.html#a01cd2f4b7d4f3c8b92c95d3b2a2d41c2',1,'on_menu_win(GtkWidget *button):&#160;gui.c']]],
+  ['on_5fnew_5fpartie_5fmain',['on_new_partie_main',['../gui_8c.html#a27cdc43516abe0fe4340748b068f10e5',1,'on_new_partie_main(GtkWidget *button):&#160;gui.c'],['../gui_8h.html#a27cdc43516abe0fe4340748b068f10e5',1,'on_new_partie_main(GtkWidget *button):&#160;gui.c']]],
+  ['on_5fnew_5fpartie_5fmenu',['on_new_partie_menu',['../gui_8c.html#a95915b28760aa2778bb24e0c57632bde',1,'on_new_partie_menu(GtkWidget *button):&#160;gui.c'],['../gui_8h.html#a95915b28760aa2778bb24e0c57632bde',1,'on_new_partie_menu(GtkWidget *button):&#160;gui.c']]],
+  ['on_5fnew_5fpartie_5fmenu_5fwin',['on_new_partie_menu_win',['../gui_8c.html#a1654c7dc3597fb1b8ed26ee112d0f98b',1,'on_new_partie_menu_win(GtkWidget *button):&#160;gui.c'],['../gui_8h.html#a1654c7dc3597fb1b8ed26ee112d0f98b',1,'on_new_partie_menu_win(GtkWidget *button):&#160;gui.c']]],
+  ['on_5fsauvegarde',['on_sauvegarde',['../gui_8c.html#a3da07517f01d4bd0a9935f51b73422ac',1,'on_sauvegarde(GtkWidget *button, gpointer *data):&#160;gui.c'],['../gui_8h.html#a3da07517f01d4bd0a9935f51b73422ac',1,'on_sauvegarde(GtkWidget *button, gpointer *data):&#160;gui.c']]],
+  ['on_5ftheme',['on_theme',['../gui_8c.html#ab6524026a8ad5526187e55f0b477610e',1,'on_theme(GtkWidget *button, gpointer *theme):&#160;gui.c'],['../gui_8h.html#ab6524026a8ad5526187e55f0b477610e',1,'on_theme(GtkWidget *button, gpointer *theme):&#160;gui.c']]]
 ];

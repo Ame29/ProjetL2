@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Projet de L2: lib/fonctionGrille.h File Reference</title>
+<title>Projet de L2: Mots Mélées: lib/fonctionGrille.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Projet de L2
+   <div id="projectname">Projet de L2: Mots Mélées
    </div>
   </td>
  </tr>
@@ -63,6 +63,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">fonctionGrille.h File Reference</div>  </div>
@@ -71,7 +73,7 @@ $(function() {
 
 <p>header contenant les prototype des fonctions utiles à la génération de la grille de jeu.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="commun_8h_source.html">commun.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="commun_8h_source.html">../lib/commun.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for fonctionGrille.h:</div>
 <div class="dyncontent">
@@ -87,6 +89,17 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 <p><a href="fonctionGrille_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmot__tire.html">mot_tire</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a6f124e3801cb5446658d8474060372ff"><td class="memItemLeft" align="right" valign="top"><a id="a6f124e3801cb5446658d8474060372ff"></a>
+typedef struct <a class="el" href="structmot__tire.html">mot_tire</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mot_tire</b></td></tr>
+<tr class="separator:a6f124e3801cb5446658d8474060372ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a427152203ef5fcb375070d6620d4f920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonctionGrille_8h.html#a427152203ef5fcb375070d6620d4f920">initGrille</a> (char matrice[N_TEST][N_TEST])</td></tr>
@@ -99,18 +112,18 @@ Functions</h2></td></tr>
 <tr class="memdesc:af411fce46388648066f379d96f490281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie un nombre entre 0 et limMax-1.  <a href="#af411fce46388648066f379d96f490281">More...</a><br /></td></tr>
 <tr class="separator:af411fce46388648066f379d96f490281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7129b8b4d648a4af7eec64a5134439ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonctionGrille_8h.html#a7129b8b4d648a4af7eec64a5134439ce">voidToChar</a> (char matrice[N_TEST][N_TEST])</td></tr>
-<tr class="memdesc:a7129b8b4d648a4af7eec64a5134439ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplace chaque caractère '*' d'une matrice de caractère par une lettre minuscule aléatoire.  <a href="#a7129b8b4d648a4af7eec64a5134439ce">More...</a><br /></td></tr>
+<tr class="memdesc:a7129b8b4d648a4af7eec64a5134439ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplace chaque caractère '.' d'une matrice de caractère par une lettre minuscule aléatoire.  <a href="#a7129b8b4d648a4af7eec64a5134439ce">More...</a><br /></td></tr>
 <tr class="separator:a7129b8b4d648a4af7eec64a5134439ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a302b606bfe4671913b3089a65cd2bee7"><td class="memItemLeft" align="right" valign="top"><a id="a302b606bfe4671913b3089a65cd2bee7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>TirerMot</b> (char *nomFichier)</td></tr>
-<tr class="separator:a302b606bfe4671913b3089a65cd2bee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af38e92503cf6dd2f961a47b33b3cf2e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonctionGrille_8h.html#af38e92503cf6dd2f961a47b33b3cf2e4">PlacerMot</a> (char matrix[N_TEST][N_TEST])</td></tr>
-<tr class="memdesc:af38e92503cf6dd2f961a47b33b3cf2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">place un mot dans la grille  <a href="#af38e92503cf6dd2f961a47b33b3cf2e4">More...</a><br /></td></tr>
-<tr class="separator:af38e92503cf6dd2f961a47b33b3cf2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab3499e38dd9683c2dfadbf824ff9bc"><td class="memItemLeft" align="right" valign="top"><a id="aeab3499e38dd9683c2dfadbf824ff9bc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>TirerMot</b> (char *nomFichier, char *mot)</td></tr>
+<tr class="separator:aeab3499e38dd9683c2dfadbf824ff9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e22c2b5057d3b7b954bf86f95efb34"><td class="memItemLeft" align="right" valign="top"><a id="a03e22c2b5057d3b7b954bf86f95efb34"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PlacerMot</b> (char matrix[N_TEST][N_TEST], char *themefile, <a class="el" href="structmot__tire.html">mot_tire</a> liste_mot[N_TEST+1])</td></tr>
+<tr class="separator:a03e22c2b5057d3b7b954bf86f95efb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>header contenant les prototype des fonctions utiles à la génération de la grille de jeu. </p>
-<dl class="section author"><dt>Author</dt><dd>Quentin Bellanger </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Asmae Bouhandi </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>01 avril 2020 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -195,33 +208,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>TirerMot</b> (char *no
 
 </div>
 </div>
-<a id="af38e92503cf6dd2f961a47b33b3cf2e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af38e92503cf6dd2f961a47b33b3cf2e4">&#9670;&nbsp;</a></span>PlacerMot()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PlacerMot </td>
-          <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>matrix</em>[N_TEST][N_TEST]</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>place un mot dans la grille </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">char</td><td>matrix[N_TEST][N_TEST] </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>rien </dd></dl>
-
-</div>
-</div>
 <a id="a7129b8b4d648a4af7eec64a5134439ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7129b8b4d648a4af7eec64a5134439ce">&#9670;&nbsp;</a></span>voidToChar()</h2>
 
@@ -238,7 +224,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>TirerMot</b> (char *no
       </table>
 </div><div class="memdoc">
 
-<p>Remplace chaque caractère '*' d'une matrice de caractère par une lettre minuscule aléatoire. </p>
+<p>Remplace chaque caractère '.' d'une matrice de caractère par une lettre minuscule aléatoire. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">char</td><td>matrice[N_TEST][N_TEST] </td></tr>

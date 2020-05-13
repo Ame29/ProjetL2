@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Projet de L2: src/menuSolo.c File Reference</title>
+<title>Projet de L2: Mots Mélées: src/menuSolo.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Projet de L2
+   <div id="projectname">Projet de L2: Mots Mélées
    </div>
   </td>
  </tr>
@@ -63,8 +63,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">menuSolo.c File Reference</div>  </div>
 </div><!--header-->
@@ -74,6 +74,8 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="commun_8h_source.html">../lib/commun.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fonctionMenu_8h_source.html">../lib/fonctionMenu.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for menuSolo.c:</div>
@@ -82,18 +84,6 @@ Include dependency graph for menuSolo.c:</div>
 <!-- MAP 0 -->
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ae8a6ea76e77fc932e204d9b2098fc43d"><td class="memItemLeft" align="right" valign="top"><a id="ae8a6ea76e77fc932e204d9b2098fc43d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FACILE</b>&#160;&#160;&#160;10</td></tr>
-<tr class="separator:ae8a6ea76e77fc932e204d9b2098fc43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64e404cf60c6b192dacc09e00f56751b"><td class="memItemLeft" align="right" valign="top"><a id="a64e404cf60c6b192dacc09e00f56751b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MOYEN</b>&#160;&#160;&#160;14</td></tr>
-<tr class="separator:a64e404cf60c6b192dacc09e00f56751b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d7c79f8aed3b4fa33a592c007807808"><td class="memItemLeft" align="right" valign="top"><a id="a0d7c79f8aed3b4fa33a592c007807808"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DIFFICILE</b>&#160;&#160;&#160;18</td></tr>
-<tr class="separator:a0d7c79f8aed3b4fa33a592c007807808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a5acf9608c8fd7bfc99aa29cf4014ed5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menuSolo_8c.html#a5acf9608c8fd7bfc99aa29cf4014ed5d">menuSoloTheme</a> ()</td></tr>
@@ -105,6 +95,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ab37175e70f111acbdfdbd77f5148bf91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menuSolo_8c.html#ab37175e70f111acbdfdbd77f5148bf91">menuSoloSauvegarde</a> ()</td></tr>
 <tr class="memdesc:ab37175e70f111acbdfdbd77f5148bf91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Premier sous-menu du mode "solo".  <a href="#ab37175e70f111acbdfdbd77f5148bf91">More...</a><br /></td></tr>
 <tr class="separator:ab37175e70f111acbdfdbd77f5148bf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a378a641279f14bbdfc1752b3e8c56561"><td class="memItemLeft" align="right" valign="top"><a id="a378a641279f14bbdfc1752b3e8c56561"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>difficulte</b></td></tr>
+<tr class="separator:a378a641279f14bbdfc1752b3e8c56561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd7087935c7531ec3ac10b17ec3dba6a"><td class="memItemLeft" align="right" valign="top"><a id="abd7087935c7531ec3ac10b17ec3dba6a"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>themefile</b> [50]</td></tr>
+<tr class="separator:abd7087935c7531ec3ac10b17ec3dba6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Sous menu du mode "solo". </p>

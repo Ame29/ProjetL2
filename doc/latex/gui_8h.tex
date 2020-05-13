@@ -1,0 +1,414 @@
+\hypertarget{gui_8h}{}\section{lib/gui.h File Reference}
+\label{gui_8h}\index{lib/gui.\+h@{lib/gui.\+h}}
+
+
+header contenant les prototype des fonctions utiles à l\textquotesingle{}interface graphique  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$gtk/gtk.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../lib/commun.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/fonction\+Grille.\+h\char`\"{}}\newline
+Include dependency graph for gui.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structpoint}{point}
+\item 
+struct \hyperlink{structinfo}{info}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{gui_8h_af3db11a2d803c7937bdb0952d6d6a66d}\label{gui_8h_af3db11a2d803c7937bdb0952d6d6a66d}} 
+typedef struct \hyperlink{structpoint}{point} {\bfseries point}
+\item 
+\mbox{\Hypertarget{gui_8h_a893f3bb0a12f2ed4808df21a9ad125ed}\label{gui_8h_a893f3bb0a12f2ed4808df21a9ad125ed}} 
+typedef struct \hyperlink{structinfo}{info} {\bfseries info}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{gui_8h_acd459c47886840fdeb9b302f47e49908}{charger} (Gtk\+File\+Chooser\+Button $\ast$chooser)
+\begin{DoxyCompactList}\small\item\em Permet de charger une sauvegarde. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{gui_8h_a668849e7538d874c6bf2996f185925cb}{replace\+Word} (const char $\ast$s, const char $\ast$oldW, const char $\ast$newW)
+\begin{DoxyCompactList}\small\item\em Remplace un mot par un autre dans une chaine de caractères. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_ae59d7b69511a5255161eee3fbabc4f2d}{on\+\_\+import\+\_\+save} (Gtk\+Widget $\ast$button\+\_\+menu, gpointer $\ast$data)
+\begin{DoxyCompactList}\small\item\em Associe le bouton sauvegarder avec la fonction sauvegarde. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_a3da07517f01d4bd0a9935f51b73422ac}{on\+\_\+sauvegarde} (Gtk\+Widget $\ast$button, gpointer $\ast$data)
+\begin{DoxyCompactList}\small\item\em Lance la sauvegarde quand le bouton sauvegarde est appuyé Crée 3 fichiers \+: un pour la sauvegarde de la matrice, un autre pour la liste des mots à trouver et le dernier pour les mots trouvés. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_a4289f5f6910d14d1b6df82de3789f355}{on\+\_\+fin} (Gtk\+Widget $\ast$button)
+\begin{DoxyCompactList}\small\item\em Affiche un message de fin sur le terminal et quitte le jeu. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_ab6524026a8ad5526187e55f0b477610e}{on\+\_\+theme} (Gtk\+Widget $\ast$button, gpointer $\ast$theme)
+\begin{DoxyCompactList}\small\item\em Permet de choisir un thème parmi les thèmes proposés. Un thème est une longue liste de mots dans laquelle les mots sont piochés aléatoirement pour remplir la grille. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_a266b2bb6a6026904c572cc3d12ff5e12}{on\+\_\+difficulte} (Gtk\+Widget $\ast$button, gpointer $\ast$difficulte)
+\begin{DoxyCompactList}\small\item\em Permet de choisir une difficulté (10, 14, 16) \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_a27cdc43516abe0fe4340748b068f10e5}{on\+\_\+new\+\_\+partie\+\_\+main} (Gtk\+Widget $\ast$button)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher la fenêtre principale de jeu. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_a95915b28760aa2778bb24e0c57632bde}{on\+\_\+new\+\_\+partie\+\_\+menu} (Gtk\+Widget $\ast$button)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher la fenêtre avec les menus pour choisir les options difficultés et les thèmes. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_a1654c7dc3597fb1b8ed26ee112d0f98b}{on\+\_\+new\+\_\+partie\+\_\+menu\+\_\+win} (Gtk\+Widget $\ast$button)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher la fenêtre quand le joueur gagne une partie. Mets à jour toutes les variables globales pour la prochaine partie. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_a71034251feba50687acede3ab9720af4}{on\+\_\+menu\+\_\+main} (Gtk\+Widget $\ast$button)
+\begin{DoxyCompactList}\small\item\em Permet de revenir sur la première fenêtre (chargement de partie ou nouvelle partie) à partir du jeu. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_a01cd2f4b7d4f3c8b92c95d3b2a2d41c2}{on\+\_\+menu\+\_\+win} (Gtk\+Widget $\ast$button)
+\begin{DoxyCompactList}\small\item\em Permet de revenir sur la première fenêtre (chargement de partie ou nouvelle partie) à partir de la fenêtre finale (gagner) \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_a016775616aae5c246857f39ee222996e}{mot\+\_\+coords} (char mat\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}, char mot\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}, \hyperlink{structpoint}{point} p1, \hyperlink{structpoint}{point} p2, \hyperlink{structinfo}{info} $\ast$b)
+\begin{DoxyCompactList}\small\item\em Permet de récupérer un mot dans la matrice quand l\textquotesingle{}utilisateur a saisi les deux couples de coordonnées du mot. \end{DoxyCompactList}\item 
+int \hyperlink{gui_8h_aec90eec0aec242f14a0b60004dfc9e86}{position} (\hyperlink{structmot__tire}{mot\+\_\+tire} $\ast$liste, char $\ast$word)
+\begin{DoxyCompactList}\small\item\em Permet de donner la position d\textquotesingle{}un mot dans une liste de mots. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_aa3cea3dfa40a83e0452c8b4ed86ff9bf}{supp\+\_\+liste} (\hyperlink{structmot__tire}{mot\+\_\+tire} $\ast$liste, char $\ast$word, int nbr\+\_\+mots)
+\begin{DoxyCompactList}\small\item\em Permet de supprimer un mot dans une liste de mots. \end{DoxyCompactList}\item 
+int \hyperlink{gui_8h_a2b17db1681c1c11628f458717d12935e}{compare\+\_\+words} (char $\ast$w1, char $\ast$w2)
+\begin{DoxyCompactList}\small\item\em Permet de comparer deux chaînes de caractères sans prendre en compte les espaces, retour chariots, etc. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{gui_8h_add4248a87dae18312c4f753a155f98cd}{choppy} (char $\ast$s)
+\begin{DoxyCompactList}\small\item\em Permet de supprimer les caractères de type retour chariot ou espace en trop à la fin d\textquotesingle{}une chaîne de caractères. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_ab3e825d1cbd389c18d727c9a2517e3a5}{on\+\_\+btn\+\_\+clicked} (Gtk\+Widget $\ast$button, gpointer $\ast$data)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}associer des paramètres à chacun des boutons de la matrice de jeu. Quand un mot est trouvé, c\textquotesingle{}est cette fonction qui gère les variables globales qui permettent d\textquotesingle{}avancer dans le jeu. C\textquotesingle{}est ici, qu\textquotesingle{}on gère les listes de mots (trouvés et à trouver). Quand un mot est trouvé, on utiliser les fonctions précedemment définies pour supprimer/ajouter le mot dans la bonne liste. C\textquotesingle{}est ici que l\textquotesingle{}on met à jour les zones textes de la fenêtre principale (de jeu) au fur et à mesure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+header contenant les prototype des fonctions utiles à l\textquotesingle{}interface graphique 
+
+\begin{DoxyAuthor}{Author}
+Asmae Bouhandi 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+13 mai 2020 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{gui_8h_acd459c47886840fdeb9b302f47e49908}\label{gui_8h_acd459c47886840fdeb9b302f47e49908}} 
+\index{gui.\+h@{gui.\+h}!charger@{charger}}
+\index{charger@{charger}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{charger()}{charger()}}
+{\footnotesize\ttfamily void charger (\begin{DoxyParamCaption}\item[{Gtk\+File\+Chooser\+Button $\ast$}]{chooser }\end{DoxyParamCaption})}
+
+
+
+Permet de charger une sauvegarde. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gtk\+File\+Chooser\+Button} & $\ast$chooser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_add4248a87dae18312c4f753a155f98cd}\label{gui_8h_add4248a87dae18312c4f753a155f98cd}} 
+\index{gui.\+h@{gui.\+h}!choppy@{choppy}}
+\index{choppy@{choppy}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{choppy()}{choppy()}}
+{\footnotesize\ttfamily char$\ast$ choppy (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Permet de supprimer les caractères de type retour chariot ou espace en trop à la fin d\textquotesingle{}une chaîne de caractères. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$s \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+n 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_a2b17db1681c1c11628f458717d12935e}\label{gui_8h_a2b17db1681c1c11628f458717d12935e}} 
+\index{gui.\+h@{gui.\+h}!compare\+\_\+words@{compare\+\_\+words}}
+\index{compare\+\_\+words@{compare\+\_\+words}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{compare\+\_\+words()}{compare\_words()}}
+{\footnotesize\ttfamily int compare\+\_\+words (\begin{DoxyParamCaption}\item[{char $\ast$}]{w1,  }\item[{char $\ast$}]{w2 }\end{DoxyParamCaption})}
+
+
+
+Permet de comparer deux chaînes de caractères sans prendre en compte les espaces, retour chariots, etc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$w1, char $\ast$w2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+same 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_a016775616aae5c246857f39ee222996e}\label{gui_8h_a016775616aae5c246857f39ee222996e}} 
+\index{gui.\+h@{gui.\+h}!mot\+\_\+coords@{mot\+\_\+coords}}
+\index{mot\+\_\+coords@{mot\+\_\+coords}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{mot\+\_\+coords()}{mot\_coords()}}
+{\footnotesize\ttfamily void mot\+\_\+coords (\begin{DoxyParamCaption}\item[{char}]{mat\mbox{[}\+N\+\_\+\+T\+E\+S\+T\mbox{]}\mbox{[}\+N\+\_\+\+T\+E\+S\+T\mbox{]},  }\item[{char}]{mot\mbox{[}\+N\+\_\+\+T\+E\+S\+T\mbox{]},  }\item[{\hyperlink{structpoint}{point}}]{p1,  }\item[{\hyperlink{structpoint}{point}}]{p2,  }\item[{\hyperlink{structinfo}{info} $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+
+Permet de récupérer un mot dans la matrice quand l\textquotesingle{}utilisateur a saisi les deux couples de coordonnées du mot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & mat\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}, char mot\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}, point p1, point p2, info $\ast$b \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_ab3e825d1cbd389c18d727c9a2517e3a5}\label{gui_8h_ab3e825d1cbd389c18d727c9a2517e3a5}} 
+\index{gui.\+h@{gui.\+h}!on\+\_\+btn\+\_\+clicked@{on\+\_\+btn\+\_\+clicked}}
+\index{on\+\_\+btn\+\_\+clicked@{on\+\_\+btn\+\_\+clicked}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{on\+\_\+btn\+\_\+clicked()}{on\_btn\_clicked()}}
+{\footnotesize\ttfamily void on\+\_\+btn\+\_\+clicked (\begin{DoxyParamCaption}\item[{Gtk\+Widget $\ast$}]{button,  }\item[{gpointer $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Permet d\textquotesingle{}associer des paramètres à chacun des boutons de la matrice de jeu. Quand un mot est trouvé, c\textquotesingle{}est cette fonction qui gère les variables globales qui permettent d\textquotesingle{}avancer dans le jeu. C\textquotesingle{}est ici, qu\textquotesingle{}on gère les listes de mots (trouvés et à trouver). Quand un mot est trouvé, on utiliser les fonctions précedemment définies pour supprimer/ajouter le mot dans la bonne liste. C\textquotesingle{}est ici que l\textquotesingle{}on met à jour les zones textes de la fenêtre principale (de jeu) au fur et à mesure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gtk\+Widget} & $\ast$button, gpointer $\ast$data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_a266b2bb6a6026904c572cc3d12ff5e12}\label{gui_8h_a266b2bb6a6026904c572cc3d12ff5e12}} 
+\index{gui.\+h@{gui.\+h}!on\+\_\+difficulte@{on\+\_\+difficulte}}
+\index{on\+\_\+difficulte@{on\+\_\+difficulte}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{on\+\_\+difficulte()}{on\_difficulte()}}
+{\footnotesize\ttfamily void on\+\_\+difficulte (\begin{DoxyParamCaption}\item[{Gtk\+Widget $\ast$}]{button,  }\item[{gpointer $\ast$}]{difficulte }\end{DoxyParamCaption})}
+
+
+
+Permet de choisir une difficulté (10, 14, 16) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gtk\+Widget} & $\ast$button, gpointer $\ast$difficulte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_a4289f5f6910d14d1b6df82de3789f355}\label{gui_8h_a4289f5f6910d14d1b6df82de3789f355}} 
+\index{gui.\+h@{gui.\+h}!on\+\_\+fin@{on\+\_\+fin}}
+\index{on\+\_\+fin@{on\+\_\+fin}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{on\+\_\+fin()}{on\_fin()}}
+{\footnotesize\ttfamily void on\+\_\+fin (\begin{DoxyParamCaption}\item[{Gtk\+Widget $\ast$}]{button }\end{DoxyParamCaption})}
+
+
+
+Affiche un message de fin sur le terminal et quitte le jeu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gtk\+Widget} & $\ast$button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_ae59d7b69511a5255161eee3fbabc4f2d}\label{gui_8h_ae59d7b69511a5255161eee3fbabc4f2d}} 
+\index{gui.\+h@{gui.\+h}!on\+\_\+import\+\_\+save@{on\+\_\+import\+\_\+save}}
+\index{on\+\_\+import\+\_\+save@{on\+\_\+import\+\_\+save}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{on\+\_\+import\+\_\+save()}{on\_import\_save()}}
+{\footnotesize\ttfamily void on\+\_\+import\+\_\+save (\begin{DoxyParamCaption}\item[{Gtk\+Widget $\ast$}]{button\+\_\+menu,  }\item[{gpointer $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Associe le bouton sauvegarder avec la fonction sauvegarde. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gtk\+Widget} & $\ast$button\+\_\+menu, gpointer $\ast$data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_a71034251feba50687acede3ab9720af4}\label{gui_8h_a71034251feba50687acede3ab9720af4}} 
+\index{gui.\+h@{gui.\+h}!on\+\_\+menu\+\_\+main@{on\+\_\+menu\+\_\+main}}
+\index{on\+\_\+menu\+\_\+main@{on\+\_\+menu\+\_\+main}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{on\+\_\+menu\+\_\+main()}{on\_menu\_main()}}
+{\footnotesize\ttfamily void on\+\_\+menu\+\_\+main (\begin{DoxyParamCaption}\item[{Gtk\+Widget $\ast$}]{button }\end{DoxyParamCaption})}
+
+
+
+Permet de revenir sur la première fenêtre (chargement de partie ou nouvelle partie) à partir du jeu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gtk\+Widget} & $\ast$button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_a01cd2f4b7d4f3c8b92c95d3b2a2d41c2}\label{gui_8h_a01cd2f4b7d4f3c8b92c95d3b2a2d41c2}} 
+\index{gui.\+h@{gui.\+h}!on\+\_\+menu\+\_\+win@{on\+\_\+menu\+\_\+win}}
+\index{on\+\_\+menu\+\_\+win@{on\+\_\+menu\+\_\+win}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{on\+\_\+menu\+\_\+win()}{on\_menu\_win()}}
+{\footnotesize\ttfamily void on\+\_\+menu\+\_\+win (\begin{DoxyParamCaption}\item[{Gtk\+Widget $\ast$}]{button }\end{DoxyParamCaption})}
+
+
+
+Permet de revenir sur la première fenêtre (chargement de partie ou nouvelle partie) à partir de la fenêtre finale (gagner) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gtk\+Widget} & $\ast$button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_a27cdc43516abe0fe4340748b068f10e5}\label{gui_8h_a27cdc43516abe0fe4340748b068f10e5}} 
+\index{gui.\+h@{gui.\+h}!on\+\_\+new\+\_\+partie\+\_\+main@{on\+\_\+new\+\_\+partie\+\_\+main}}
+\index{on\+\_\+new\+\_\+partie\+\_\+main@{on\+\_\+new\+\_\+partie\+\_\+main}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{on\+\_\+new\+\_\+partie\+\_\+main()}{on\_new\_partie\_main()}}
+{\footnotesize\ttfamily void on\+\_\+new\+\_\+partie\+\_\+main (\begin{DoxyParamCaption}\item[{Gtk\+Widget $\ast$}]{button }\end{DoxyParamCaption})}
+
+
+
+Permet d\textquotesingle{}afficher la fenêtre principale de jeu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gtk\+Widget} & $\ast$button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_a95915b28760aa2778bb24e0c57632bde}\label{gui_8h_a95915b28760aa2778bb24e0c57632bde}} 
+\index{gui.\+h@{gui.\+h}!on\+\_\+new\+\_\+partie\+\_\+menu@{on\+\_\+new\+\_\+partie\+\_\+menu}}
+\index{on\+\_\+new\+\_\+partie\+\_\+menu@{on\+\_\+new\+\_\+partie\+\_\+menu}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{on\+\_\+new\+\_\+partie\+\_\+menu()}{on\_new\_partie\_menu()}}
+{\footnotesize\ttfamily void on\+\_\+new\+\_\+partie\+\_\+menu (\begin{DoxyParamCaption}\item[{Gtk\+Widget $\ast$}]{button }\end{DoxyParamCaption})}
+
+
+
+Permet d\textquotesingle{}afficher la fenêtre avec les menus pour choisir les options difficultés et les thèmes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gtk\+Widget} & $\ast$button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_a1654c7dc3597fb1b8ed26ee112d0f98b}\label{gui_8h_a1654c7dc3597fb1b8ed26ee112d0f98b}} 
+\index{gui.\+h@{gui.\+h}!on\+\_\+new\+\_\+partie\+\_\+menu\+\_\+win@{on\+\_\+new\+\_\+partie\+\_\+menu\+\_\+win}}
+\index{on\+\_\+new\+\_\+partie\+\_\+menu\+\_\+win@{on\+\_\+new\+\_\+partie\+\_\+menu\+\_\+win}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{on\+\_\+new\+\_\+partie\+\_\+menu\+\_\+win()}{on\_new\_partie\_menu\_win()}}
+{\footnotesize\ttfamily void on\+\_\+new\+\_\+partie\+\_\+menu\+\_\+win (\begin{DoxyParamCaption}\item[{Gtk\+Widget $\ast$}]{button }\end{DoxyParamCaption})}
+
+
+
+Permet d\textquotesingle{}afficher la fenêtre quand le joueur gagne une partie. Mets à jour toutes les variables globales pour la prochaine partie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gtk\+Widget} & $\ast$button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_a3da07517f01d4bd0a9935f51b73422ac}\label{gui_8h_a3da07517f01d4bd0a9935f51b73422ac}} 
+\index{gui.\+h@{gui.\+h}!on\+\_\+sauvegarde@{on\+\_\+sauvegarde}}
+\index{on\+\_\+sauvegarde@{on\+\_\+sauvegarde}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{on\+\_\+sauvegarde()}{on\_sauvegarde()}}
+{\footnotesize\ttfamily void on\+\_\+sauvegarde (\begin{DoxyParamCaption}\item[{Gtk\+Widget $\ast$}]{button,  }\item[{gpointer $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Lance la sauvegarde quand le bouton sauvegarde est appuyé Crée 3 fichiers \+: un pour la sauvegarde de la matrice, un autre pour la liste des mots à trouver et le dernier pour les mots trouvés. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gtk\+Widget} & $\ast$button, gpointer $\ast$data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_ab6524026a8ad5526187e55f0b477610e}\label{gui_8h_ab6524026a8ad5526187e55f0b477610e}} 
+\index{gui.\+h@{gui.\+h}!on\+\_\+theme@{on\+\_\+theme}}
+\index{on\+\_\+theme@{on\+\_\+theme}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{on\+\_\+theme()}{on\_theme()}}
+{\footnotesize\ttfamily void on\+\_\+theme (\begin{DoxyParamCaption}\item[{Gtk\+Widget $\ast$}]{button,  }\item[{gpointer $\ast$}]{theme }\end{DoxyParamCaption})}
+
+
+
+Permet de choisir un thème parmi les thèmes proposés. Un thème est une longue liste de mots dans laquelle les mots sont piochés aléatoirement pour remplir la grille. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gtk\+Widget} & $\ast$button, gpointer $\ast$theme \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_aec90eec0aec242f14a0b60004dfc9e86}\label{gui_8h_aec90eec0aec242f14a0b60004dfc9e86}} 
+\index{gui.\+h@{gui.\+h}!position@{position}}
+\index{position@{position}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily int position (\begin{DoxyParamCaption}\item[{\hyperlink{structmot__tire}{mot\+\_\+tire} $\ast$}]{liste,  }\item[{char $\ast$}]{word }\end{DoxyParamCaption})}
+
+
+
+Permet de donner la position d\textquotesingle{}un mot dans une liste de mots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{structmot__tire}{mot\+\_\+tire}} & $\ast$liste, char $\ast$word \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_a668849e7538d874c6bf2996f185925cb}\label{gui_8h_a668849e7538d874c6bf2996f185925cb}} 
+\index{gui.\+h@{gui.\+h}!replace\+Word@{replace\+Word}}
+\index{replace\+Word@{replace\+Word}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{replace\+Word()}{replaceWord()}}
+{\footnotesize\ttfamily char$\ast$ replace\+Word (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s,  }\item[{const char $\ast$}]{oldW,  }\item[{const char $\ast$}]{newW }\end{DoxyParamCaption})}
+
+
+
+Remplace un mot par un autre dans une chaine de caractères. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char $\ast$s, const char $\ast$oldW, const char $\ast$newW \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gui_8h_aa3cea3dfa40a83e0452c8b4ed86ff9bf}\label{gui_8h_aa3cea3dfa40a83e0452c8b4ed86ff9bf}} 
+\index{gui.\+h@{gui.\+h}!supp\+\_\+liste@{supp\+\_\+liste}}
+\index{supp\+\_\+liste@{supp\+\_\+liste}!gui.\+h@{gui.\+h}}
+\subsubsection{\texorpdfstring{supp\+\_\+liste()}{supp\_liste()}}
+{\footnotesize\ttfamily void supp\+\_\+liste (\begin{DoxyParamCaption}\item[{\hyperlink{structmot__tire}{mot\+\_\+tire} $\ast$}]{liste,  }\item[{char $\ast$}]{word,  }\item[{int}]{nbr\+\_\+mots }\end{DoxyParamCaption})}
+
+
+
+Permet de supprimer un mot dans une liste de mots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{structmot__tire}{mot\+\_\+tire}} & $\ast$liste, char $\ast$word, int nbr\+\_\+mots \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}

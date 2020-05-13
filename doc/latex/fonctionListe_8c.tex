@@ -1,0 +1,112 @@
+\hypertarget{fonctionListe_8c}{}\section{src/fonction\+Liste.c File Reference}
+\label{fonctionListe_8c}\index{src/fonction\+Liste.\+c@{src/fonction\+Liste.\+c}}
+
+
+Contient toutes les fonctions utiles à l\textquotesingle{}initialisation de la liste.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for fonction\+Liste.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{fonctionListe_8c_a40b5faf8cf31b07b36d179357298a79a}{afficher\+\_\+liste} (char $\ast$$\ast$liste\+\_\+de\+\_\+mot, int $\ast$nb\+\_\+element)
+\begin{DoxyCompactList}\small\item\em affiche la matrice \end{DoxyCompactList}\item 
+int \hyperlink{fonctionListe_8c_a630f5b2540d170694f43e33e9345d578}{mot\+\_\+dans\+\_\+liste} (char $\ast$$\ast$liste\+\_\+de\+\_\+mot, char $\ast$mot, int $\ast$nb\+\_\+element)
+\begin{DoxyCompactList}\small\item\em vérifie la présence de la chaine de caractère \char`\"{}mot\char`\"{} dans \char`\"{}le tableau \char`\"{}liste\+\_\+de\+\_\+mot\char`\"{} de taille \char`\"{}nb\+\_\+element", renvoie 1 si l\textquotesingle{}élément est présent, 0 sinon \end{DoxyCompactList}\item 
+void \hyperlink{fonctionListe_8c_a0e39409f5a901688797d2841173651fd}{destruction\+\_\+mot} (char $\ast$$\ast$liste\+\_\+de\+\_\+mot, char $\ast$mot, int $\ast$nb\+\_\+element)
+\begin{DoxyCompactList}\small\item\em détruit la chaine de caractère \char`\"{}mot\char`\"{} dans le tableau \char`\"{}liste\+\_\+de\+\_\+mot\char`\"{} de taille \char`\"{}nb\+\_\+element\char`\"{} décrémente \char`\"{}nb\+\_\+element\char`\"{} de 1 \end{DoxyCompactList}\item 
+int \hyperlink{fonctionListe_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Test des fonctions mot\+\_\+dans\+\_\+liste, destruction\+\_\+mot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contient toutes les fonctions utiles à l\textquotesingle{}initialisation de la liste. 
+
+\begin{DoxyAuthor}{Author}
+Asmae Bouhandi 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+13 mai 2020 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{fonctionListe_8c_a40b5faf8cf31b07b36d179357298a79a}\label{fonctionListe_8c_a40b5faf8cf31b07b36d179357298a79a}} 
+\index{fonction\+Liste.\+c@{fonction\+Liste.\+c}!afficher\+\_\+liste@{afficher\+\_\+liste}}
+\index{afficher\+\_\+liste@{afficher\+\_\+liste}!fonction\+Liste.\+c@{fonction\+Liste.\+c}}
+\subsubsection{\texorpdfstring{afficher\+\_\+liste()}{afficher\_liste()}}
+{\footnotesize\ttfamily void afficher\+\_\+liste (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{liste\+\_\+de\+\_\+mot,  }\item[{int $\ast$}]{nb\+\_\+element }\end{DoxyParamCaption})}
+
+
+
+affiche la matrice 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$$\ast$ liste\+\_\+de\+\_\+mot, int $\ast$ nb\+\_\+element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fonctionListe_8c_a0e39409f5a901688797d2841173651fd}\label{fonctionListe_8c_a0e39409f5a901688797d2841173651fd}} 
+\index{fonction\+Liste.\+c@{fonction\+Liste.\+c}!destruction\+\_\+mot@{destruction\+\_\+mot}}
+\index{destruction\+\_\+mot@{destruction\+\_\+mot}!fonction\+Liste.\+c@{fonction\+Liste.\+c}}
+\subsubsection{\texorpdfstring{destruction\+\_\+mot()}{destruction\_mot()}}
+{\footnotesize\ttfamily void destruction\+\_\+mot (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{liste\+\_\+de\+\_\+mot,  }\item[{char $\ast$}]{mot,  }\item[{int $\ast$}]{nb\+\_\+element }\end{DoxyParamCaption})}
+
+
+
+détruit la chaine de caractère \char`\"{}mot\char`\"{} dans le tableau \char`\"{}liste\+\_\+de\+\_\+mot\char`\"{} de taille \char`\"{}nb\+\_\+element\char`\"{} décrémente \char`\"{}nb\+\_\+element\char`\"{} de 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$$\ast$ liste\+\_\+de\+\_\+mot, char $\ast$ mot, int $\ast$ nb\+\_\+element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fonctionListe_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{fonctionListe_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{fonction\+Liste.\+c@{fonction\+Liste.\+c}!main@{main}}
+\index{main@{main}!fonction\+Liste.\+c@{fonction\+Liste.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test des fonctions mot\+\_\+dans\+\_\+liste, destruction\+\_\+mot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fonctionListe_8c_a630f5b2540d170694f43e33e9345d578}\label{fonctionListe_8c_a630f5b2540d170694f43e33e9345d578}} 
+\index{fonction\+Liste.\+c@{fonction\+Liste.\+c}!mot\+\_\+dans\+\_\+liste@{mot\+\_\+dans\+\_\+liste}}
+\index{mot\+\_\+dans\+\_\+liste@{mot\+\_\+dans\+\_\+liste}!fonction\+Liste.\+c@{fonction\+Liste.\+c}}
+\subsubsection{\texorpdfstring{mot\+\_\+dans\+\_\+liste()}{mot\_dans\_liste()}}
+{\footnotesize\ttfamily int mot\+\_\+dans\+\_\+liste (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{liste\+\_\+de\+\_\+mot,  }\item[{char $\ast$}]{mot,  }\item[{int $\ast$}]{nb\+\_\+element }\end{DoxyParamCaption})}
+
+
+
+vérifie la présence de la chaine de caractère \char`\"{}mot\char`\"{} dans \char`\"{}le tableau \char`\"{}liste\+\_\+de\+\_\+mot\char`\"{} de taille \char`\"{}nb\+\_\+element", renvoie 1 si l\textquotesingle{}élément est présent, 0 sinon 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$$\ast$ liste\+\_\+de\+\_\+mot, char $\ast$ mot, int $\ast$ nb\+\_\+element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 ou 1 
+\end{DoxyReturn}

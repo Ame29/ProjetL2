@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Projet de L2: lib/fonctionListe.h Source File</title>
+<title>Projet de L2: Mots Mélées: lib/fonctionListe.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Projet de L2
+   <div id="projectname">Projet de L2: Mots Mélées
    </div>
   </td>
  </tr>
@@ -66,7 +66,10 @@ $(function() {
 <div class="title">fonctionListe.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="fonctionListe_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef LISTE</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define LISTE</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> afficher_liste(<span class="keywordtype">char</span> ** liste_de_mot, <span class="keywordtype">int</span> * nb_element);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">int</span> mot_dans_liste(<span class="keywordtype">char</span> ** liste_de_mot, <span class="keywordtype">char</span> * mot, <span class="keywordtype">int</span> * nb_element);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">void</span> destruction_mot(<span class="keywordtype">char</span> ** liste_de_mot, <span class="keywordtype">char</span> * mot, <span class="keywordtype">int</span> * nb_element);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div></div><!-- fragment --></div><!-- contents -->
+<a href="fonctionListe_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef LISTE</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define LISTE</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fonctionListe_8h.html#a40b5faf8cf31b07b36d179357298a79a">afficher_liste</a>(<span class="keywordtype">char</span> ** liste_de_mot, <span class="keywordtype">int</span> * nb_element);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">int</span> <a class="code" href="fonctionListe_8h.html#a630f5b2540d170694f43e33e9345d578">mot_dans_liste</a>(<span class="keywordtype">char</span> ** liste_de_mot, <span class="keywordtype">char</span> * mot, <span class="keywordtype">int</span> * nb_element);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fonctionListe_8h.html#a0e39409f5a901688797d2841173651fd">destruction_mot</a>(<span class="keywordtype">char</span> ** liste_de_mot, <span class="keywordtype">char</span> * mot, <span class="keywordtype">int</span> * nb_element);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="fonctionListe_8h_html_a0e39409f5a901688797d2841173651fd"><div class="ttname"><a href="fonctionListe_8h.html#a0e39409f5a901688797d2841173651fd">destruction_mot</a></div><div class="ttdeci">void destruction_mot(char **liste_de_mot, char *mot, int *nb_element)</div><div class="ttdoc">détruit la chaine de caractère &quot;mot&quot; dans le tableau &quot;liste_de_mot&quot; de taille &quot;nb_element&quot; décrémente...</div><div class="ttdef"><b>Definition:</b> fonctionListe.c:46</div></div>
+<div class="ttc" id="fonctionListe_8h_html_a40b5faf8cf31b07b36d179357298a79a"><div class="ttname"><a href="fonctionListe_8h.html#a40b5faf8cf31b07b36d179357298a79a">afficher_liste</a></div><div class="ttdeci">void afficher_liste(char **liste_de_mot, int *nb_element)</div><div class="ttdoc">affiche la matrice </div><div class="ttdef"><b>Definition:</b> fonctionListe.c:19</div></div>
+<div class="ttc" id="fonctionListe_8h_html_a630f5b2540d170694f43e33e9345d578"><div class="ttname"><a href="fonctionListe_8h.html#a630f5b2540d170694f43e33e9345d578">mot_dans_liste</a></div><div class="ttdeci">int mot_dans_liste(char **liste_de_mot, char *mot, int *nb_element)</div><div class="ttdoc">vérifie la présence de la chaine de caractère &quot;mot&quot; dans &quot;le tableau &quot;liste_de_mot&quot; de taille &quot;nb_ele...</div><div class="ttdef"><b>Definition:</b> fonctionListe.c:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -4,7 +4,7 @@ digraph "lib/fonctionGrille.h"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node0 [label="lib/fonctionGrille.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="commun.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$commun_8h.html",tooltip="header contenant les élément utiles aux autres fichier. "];
+  Node1 [label="../lib/commun.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$commun_8h.html",tooltip="header contenant les élément utiles aux autres fichier. "];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="stdio.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
 }

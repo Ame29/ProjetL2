@@ -5,11 +5,22 @@
 header contenant les prototype des fonctions utiles à la génération de la grille de jeu.  
 
 
-{\ttfamily \#include \char`\"{}commun.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/commun.\+h\char`\"{}}\newline
 Include dependency graph for fonction\+Grille.\+h\+:
 % FIG 0
 This graph shows which files directly or indirectly include this file\+:
 % FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmot__tire}{mot\+\_\+tire}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{fonctionGrille_8h_a6f124e3801cb5446658d8474060372ff}\label{fonctionGrille_8h_a6f124e3801cb5446658d8474060372ff}} 
+typedef struct \hyperlink{structmot__tire}{mot\+\_\+tire} {\bfseries mot\+\_\+tire}
+\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -20,19 +31,20 @@ void \hyperlink{fonctionGrille_8h_a5cd0bdbe388e0957a6b30a3fe470298b}{aff\+Grille
 int \hyperlink{fonctionGrille_8h_af411fce46388648066f379d96f490281}{nombre\+Aleatoire} (int lim\+Max)
 \begin{DoxyCompactList}\small\item\em Renvoie un nombre entre 0 et lim\+Max-\/1. \end{DoxyCompactList}\item 
 void \hyperlink{fonctionGrille_8h_a7129b8b4d648a4af7eec64a5134439ce}{void\+To\+Char} (char matrice\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]})
-\begin{DoxyCompactList}\small\item\em Remplace chaque caractère \textquotesingle{}$\ast$\textquotesingle{} d\textquotesingle{}une matrice de caractère par une lettre minuscule aléatoire. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{fonctionGrille_8h_a302b606bfe4671913b3089a65cd2bee7}\label{fonctionGrille_8h_a302b606bfe4671913b3089a65cd2bee7}} 
-int {\bfseries Tirer\+Mot} (char $\ast$nom\+Fichier)
+\begin{DoxyCompactList}\small\item\em Remplace chaque caractère \textquotesingle{}.\textquotesingle{} d\textquotesingle{}une matrice de caractère par une lettre minuscule aléatoire. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{fonctionGrille_8h_aeab3499e38dd9683c2dfadbf824ff9bc}\label{fonctionGrille_8h_aeab3499e38dd9683c2dfadbf824ff9bc}} 
+int {\bfseries Tirer\+Mot} (char $\ast$nom\+Fichier, char $\ast$mot)
 \item 
-void \hyperlink{fonctionGrille_8h_af38e92503cf6dd2f961a47b33b3cf2e4}{Placer\+Mot} (char matrix\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]})
-\begin{DoxyCompactList}\small\item\em place un mot dans la grille \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\Hypertarget{fonctionGrille_8h_a03e22c2b5057d3b7b954bf86f95efb34}\label{fonctionGrille_8h_a03e22c2b5057d3b7b954bf86f95efb34}} 
+void {\bfseries Placer\+Mot} (char matrix\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}, char $\ast$themefile, \hyperlink{structmot__tire}{mot\+\_\+tire} liste\+\_\+mot\mbox{[}N\+\_\+\+T\+E\+ST+1\mbox{]})
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 header contenant les prototype des fonctions utiles à la génération de la grille de jeu. 
 
 \begin{DoxyAuthor}{Author}
-Quentin Bellanger 
+Asmae Bouhandi 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
 1 
@@ -97,24 +109,6 @@ Renvoie un nombre entre 0 et lim\+Max-\/1.
 \begin{DoxyReturn}{Returns}
 Valeur entière entre 0 et lim\+Mas-\/1 
 \end{DoxyReturn}
-\mbox{\Hypertarget{fonctionGrille_8h_af38e92503cf6dd2f961a47b33b3cf2e4}\label{fonctionGrille_8h_af38e92503cf6dd2f961a47b33b3cf2e4}} 
-\index{fonction\+Grille.\+h@{fonction\+Grille.\+h}!Placer\+Mot@{Placer\+Mot}}
-\index{Placer\+Mot@{Placer\+Mot}!fonction\+Grille.\+h@{fonction\+Grille.\+h}}
-\subsubsection{\texorpdfstring{Placer\+Mot()}{PlacerMot()}}
-{\footnotesize\ttfamily void Placer\+Mot (\begin{DoxyParamCaption}\item[{char}]{matrix\mbox{[}\+N\+\_\+\+T\+E\+S\+T\mbox{]}\mbox{[}\+N\+\_\+\+T\+E\+S\+T\mbox{]} }\end{DoxyParamCaption})}
-
-
-
-place un mot dans la grille 
-
-
-\begin{DoxyParams}{Parameters}
-{\em char} & matrix\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]}\mbox{[}N\+\_\+\+T\+E\+ST\mbox{]} \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-rien 
-\end{DoxyReturn}
 \mbox{\Hypertarget{fonctionGrille_8h_a7129b8b4d648a4af7eec64a5134439ce}\label{fonctionGrille_8h_a7129b8b4d648a4af7eec64a5134439ce}} 
 \index{fonction\+Grille.\+h@{fonction\+Grille.\+h}!void\+To\+Char@{void\+To\+Char}}
 \index{void\+To\+Char@{void\+To\+Char}!fonction\+Grille.\+h@{fonction\+Grille.\+h}}
@@ -123,7 +117,7 @@ rien
 
 
 
-Remplace chaque caractère \textquotesingle{}$\ast$\textquotesingle{} d\textquotesingle{}une matrice de caractère par une lettre minuscule aléatoire. 
+Remplace chaque caractère \textquotesingle{}.\textquotesingle{} d\textquotesingle{}une matrice de caractère par une lettre minuscule aléatoire. 
 
 
 \begin{DoxyParams}{Parameters}
