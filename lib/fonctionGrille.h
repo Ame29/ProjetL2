@@ -6,10 +6,17 @@
  * \date 01 avril 2020
  */
 
+
+
 #ifndef GRILLE
 #define GRILLE
 
 #include "../lib/commun.h"
+
+/**
+* \struct mot_tire
+*/
+
 
 typedef struct mot_tire mot_tire ;
 struct mot_tire{
