@@ -1,3 +1,11 @@
+/**
+ * \file sauvegarde.c
+ * \brief sauvegarde/chargement d'une partie
+ * \author Guillaume Derrien
+ * \version 1
+ * \date 01 avril 2020
+ */
+
 #include <stdio.h>
 
 #define N 2
