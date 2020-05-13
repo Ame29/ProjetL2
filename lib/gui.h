@@ -1,3 +1,11 @@
+/**
+ * \file gui.h
+ * \brief
+ * \author Asmae Bouhandi
+ * \version 1
+ * \date 13 mai 2020
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -7,11 +15,19 @@
 #include "../lib/commun.h"
 #include "../lib/fonctionGrille.h"
 
+/**
+* \struct point
+*/
+
 typedef struct point point ;
 struct point{
 	int col ;
 	int line ;
 };
+
+/**
+* \struct info
+*/
 
 typedef struct info info ;
 struct info{
