@@ -1,6 +1,6 @@
 /**
  * \file fonctionGrille.c
- * \brief Contient toutes les fonctions utiles à l'initialisation de la grille de jeu
+ * \brief Contient toutes les fonctions utiles à gestion la grille de jeu
  * \author Asmae Bouhandi
  * \version 1
  * \date 01 avril 2020
@@ -105,7 +105,6 @@ void voidToChar(char matrice[N_TEST][N_TEST])
  * \param char * nomFichier, char * motTire
  * \return 1 si un problème survient, 0 sinon
  */
-
 int TirerMot(char *nomFichier, char *motTire){
 	FILE * fichier = NULL ;
 	int nbrMots = 0, numMot = 0, charLu ;
@@ -146,6 +145,12 @@ int TirerMot(char *nomFichier, char *motTire){
 	return indiceMot;
 }
 
+/**
+ * \fn int RechercheTableau(int *tab, int n)
+ * \brief Recherche l'entier n dans le tableau tab
+ * \param int *tab, int n
+ * \return 0 ou 1
+ */
 int RechercheTableau(int *tab, int n)
 {
     int N = 30 ;
@@ -159,6 +164,12 @@ int RechercheTableau(int *tab, int n)
     return 0 ;
 }
 
+/**
+ * \fn void ajoutListe(mot_tire liste_mot[N_TEST+1], char *mot)
+ * \brief ajoute à la liste un mot
+ * \param mot_tire liste_mot[N_TEST+1], char *mot
+ * \return rien
+ */
 void ajoutListe(mot_tire liste_mot[N_TEST+1], char *mot)
 {
     int i = 0 ;
@@ -169,9 +180,15 @@ void ajoutListe(mot_tire liste_mot[N_TEST+1], char *mot)
     strcpy(liste_mot[i].mot, mot) ;
 }
 
+/**
+ * \fn void upper_string(char *s)
+ * \brief Fait passer un chaine de caractère de minuscule vers majuscule
+ * \param char *s
+ * \return rien
+ */
 void upper_string(char *s) {
    int c = 0;
-   
+
    while (s[c] != '\0') {
       if (s[c] >= 'a' && s[c] <= 'z') {
          s[c] = s[c] - 32;
@@ -226,7 +243,7 @@ void PlacerMot(char matrix[N_TEST][N_TEST], char *themefile, mot_tire liste_mot[
 
             //random_choix = 3 ;
             switch(random_choix){
-            
+
                 // case NORDOUEST:
                 //     while(random_i-lenght<0||random_j-lenght<0)
                 //     {
@@ -244,7 +261,7 @@ void PlacerMot(char matrix[N_TEST][N_TEST], char *themefile, mot_tire liste_mot[
                 //         compteur++;
                 //     }
                 //     break;
-                    
+
                 // case NORDEST:
                 //     while(random_i+lenght<N||random_j-lenght>0){
                 //         random_i = rand() % N;
@@ -261,7 +278,7 @@ void PlacerMot(char matrix[N_TEST][N_TEST], char *themefile, mot_tire liste_mot[
                 //         compteur++;
                 //     }
                 //     break;
-                    
+
                 // case SUDOUEST:
                 //     while(random_i-lenght<0||random_j+lenght>N)
                 //     {
@@ -279,7 +296,7 @@ void PlacerMot(char matrix[N_TEST][N_TEST], char *themefile, mot_tire liste_mot[
                 //         compteur++;
                 //     }
                 //     break;
-                    
+
                 // case SUDEST:
                 //     while(random_i+lenght>N || random_j+lenght>N)
                 //     {
@@ -297,7 +314,7 @@ void PlacerMot(char matrix[N_TEST][N_TEST], char *themefile, mot_tire liste_mot[
                 //         compteur++;
                 //     }
                 //     break;
-                    
+
                 case NORD:
                 //printf("NORD\n");
                     k = 0 ;
@@ -355,7 +372,7 @@ void PlacerMot(char matrix[N_TEST][N_TEST], char *themefile, mot_tire liste_mot[
                     compteur++;
                     deja_utilises[compteur] = a ;
                     break;
-                    
+
                 case OUEST:
                 //printf("OUEST\n");
                     k = 0 ;
@@ -416,7 +433,7 @@ void PlacerMot(char matrix[N_TEST][N_TEST], char *themefile, mot_tire liste_mot[
                     compteur++;
                     deja_utilises[compteur] = a ;
                     break;
-                    
+
                 case EST:
                 //printf("EST\n");
                     k = 0 ;
@@ -453,7 +470,7 @@ void PlacerMot(char matrix[N_TEST][N_TEST], char *themefile, mot_tire liste_mot[
                     k = 0 ;
                     liste_mot[compteur].x1 = random_i ;
                     liste_mot[compteur].y1 = random_j ;
-                    
+
                     while(k < lenght && (matrix[random_i][random_j]=='.' || matrix[random_i][random_j] == toupper(word[k])))
                     {
                         //printf("word[%i] = %c\n", k, word[k]);
@@ -530,7 +547,7 @@ void PlacerMot(char matrix[N_TEST][N_TEST], char *themefile, mot_tire liste_mot[
                     compteur++;
                     deja_utilises[compteur] = a ;
                     break;
-                    
+
                 default: break;
 
             }
