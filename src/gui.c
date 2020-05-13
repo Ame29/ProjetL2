@@ -1,3 +1,11 @@
+/**
+ * \file gui.c
+ * \brief fonctions usuelles
+ * \author Asmae Bouhandi
+ * \version 1
+ * \date 13 mai 2020
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -36,6 +44,13 @@ char themefile[50] = "./themes/theme_animal.txt" ;
 char temps[32] ;
 
 //-----------------------------------------------
+
+/**
+ * \fn int main(int argc, char *argv[])
+ * \brief entrée du programme
+ * \param int argc, char *argv[]
+ * \return 0
+ */
 
 int main(int argc, char *argv[])
 {
@@ -124,9 +139,14 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-/*
-Remplace un mot par un autre dans une chaine de caractères.
-*/
+
+/**
+ * \fn char *replaceWord(const char *s, const char *oldW, const char *newW)
+ * \brief Remplace un mot par un autre dans une chaine de caractères.
+ * \param const char *s, const char *oldW, const char *newW
+ * \return result
+ */
+
 char *replaceWord(const char *s, const char *oldW, const char *newW) 
 { 
     char *result; 
@@ -168,14 +188,16 @@ char *replaceWord(const char *s, const char *oldW, const char *newW)
     return result; 
 } 
 
-/*
-Permet de créer la matrice de jeu (sa forme graphique à l'aide de bouton Gtk) en utilisant les fonctions de la librarie
-fonctionGrille.c
 
-Permet de créer la matrice jeu à partir d'une sauvegarde
-
-Crée le chronomètre et l'initialise à zéro
+/**
+ * \fn void create_board(GtkWidget *button_menu)
+ * \brief Permet de créer la matrice de jeu (sa forme graphique à l'aide de bouton Gtk) en utilisant les fonctions de la librarie fonctionGrille.c 
+    Permet de créer la matrice jeu à partir d'une sauvegarde. 
+    Crée le chronomètre et l'initialise à zéro.
+ * \param GtkWidget *button_menu
+ * \return rien
 */
+
 void create_board(GtkWidget *button_menu)
 {
     GtkBuilder *builder;
@@ -312,12 +334,14 @@ void create_board(GtkWidget *button_menu)
     gtk_container_add(GTK_CONTAINER(myBox), myGrid);
 }
 
-/*
-Lance la sauvegarde quand le bouton sauvegarde est appuyé
 
-Crée 3 fichiers : un pour la sauvegarde de la matrice, un autre pour la liste des mots à trouver et le dernier pour
-les mots trouvés.
+/**
+ * \fn void on_sauvegarde(GtkWidget *button, gpointer *data)
+ * \brief Lance la sauvegarde quand le bouton sauvegarde est appuyé Crée 3 fichiers : un pour la sauvegarde de la matrice, un autre pour la liste des mots à trouver et le dernier pour les mots trouvés.
+ * \param GtkWidget *button, gpointer *data
+ * \return rien
 */
+
 void on_sauvegarde(GtkWidget *button, gpointer *data)
 {
     printf("on_sauvegarde\n");
@@ -374,9 +398,13 @@ void on_sauvegarde(GtkWidget *button, gpointer *data)
     }
 }
 
-/*
-Permet de charger une sauvegarde
+/**
+ * \fn void charger(GtkFileChooserButton *chooser)
+ * \brief Permet de charger une sauvegarde
+ * \param GtkFileChooserButton *chooser
+ * \return rien
 */
+
 void charger(GtkFileChooserButton *chooser)
 {
 
@@ -440,9 +468,13 @@ void charger(GtkFileChooserButton *chooser)
     m = N_TEST-a_trouver ;
 }
 
-/*
-Associe le bouton sauvegarder avec la fonction sauvegarde
+/**
+ * \fn void on_import_save(GtkWidget *button_menu, gpointer *data)
+ * \brief Associe le bouton sauvegarder avec la fonction sauvegarde
+ * \param GtkWidget *button_menu, gpointer *data
+ * \return rien
 */
+
 void on_import_save(GtkWidget *button_menu, gpointer *data)
 {
     printf("save\n");
@@ -474,18 +506,24 @@ void on_import_save(GtkWidget *button_menu, gpointer *data)
 
 }
 
-/*
-Affiche un message de fin sur le terminal et quitte le jeu
+/**
+ * \fn void on_fin(GtkWidget *button)
+ * \brief Affiche un message de fin sur le terminal et quitte le jeu
+ * \param GtkWidget *button
+ * \return rien
 */
+
 void on_fin(GtkWidget *button)
 {
     jeu_fin = 1 ;
     printf("Au revoir!\n");
 }
 
-/*
-Permet de choisir un thème parmi les thèmes proposés. Un thème est une longue liste de mots dans laquelle les
-mots sont piochés aléatoirement pour remplir la grille.
+/**
+ * \fn void on_theme(GtkWidget *button, gpointer *theme)
+ * \brief Permet de choisir un thème parmi les thèmes proposés. Un thème est une longue liste de mots dans laquelle les mots sont piochés aléatoirement pour remplir la grille.
+ * \param GtkWidget *button, gpointer *theme
+ * \return rien
 */
 void on_theme(GtkWidget *button, gpointer *theme)
 {
@@ -493,8 +531,11 @@ void on_theme(GtkWidget *button, gpointer *theme)
     strcpy(themefile, theme);
 }
 
-/*
-Permet de choisir une difficulté (10, 14, 16)
+/**
+ * \fn void on_difficulte(GtkWidget *button, gpointer *difficulte)
+ * \brief Permet de choisir une difficulté (10, 14, 16)
+ * \param GtkWidget *button, gpointer *difficulte
+ * \return rien
 */
 void on_difficulte(GtkWidget *button, gpointer *difficulte)
 {
@@ -502,7 +543,12 @@ void on_difficulte(GtkWidget *button, gpointer *difficulte)
     printf("%i\n", (int*)difficulte);
 }
 
-/*Permet d'afficher la fenêtre principale de jeu*/
+/**
+ * \fn void on_new_partie_main(GtkWidget *button)
+ * \brief Permet d'afficher la fenêtre principale de jeu
+ * \param GtkWidget *button
+ * \return rien
+*/
 void on_new_partie_main(GtkWidget *button)
 {
     gtk_widget_hide(window_menu);
@@ -513,9 +559,11 @@ void on_new_partie_main(GtkWidget *button)
 
 }
 
-/*Permet d'afficher la fenêtre quand le joueur gagne une partie
-
-Mets à jour toutes les variables globales pour la prochaine partie
+/**
+ * \fn void on_new_partie_menu_win(GtkWidget *button)
+ * \brief Permet d'afficher la fenêtre quand le joueur gagne une partie. Mets à jour toutes les variables globales pour la prochaine partie
+ * \param GtkWidget *button
+ * \return rien
 */
 void on_new_partie_menu_win(GtkWidget *button)
 {
@@ -547,7 +595,13 @@ void on_new_partie_menu_win(GtkWidget *button)
     gtk_widget_show_all(window_chargement);
 }
 
-/*Permet d'afficher la fenêtre avec les menus pour choisir les options difficultés et les thèmes */
+/**
+ * \fn void on_new_partie_menu(GtkWidget *button)
+ * \brief Permet d'afficher la fenêtre avec les menus pour choisir les options difficultés et les thèmes
+ * \param GtkWidget *button
+ * \return rien
+*/
+
 void on_new_partie_menu(GtkWidget *button)
 {
     gtk_widget_hide(window_chargement);
@@ -555,15 +609,24 @@ void on_new_partie_menu(GtkWidget *button)
 
 }
 
-/*Permet de revenir sur la première fenêtre (chargement de partie ou nouvelle partie) à partir du jeu*/
+/**
+ * \fn void on_menu_main(GtkWidget *button)
+ * \brief Permet de revenir sur la première fenêtre (chargement de partie ou nouvelle partie) à partir du jeu
+ * \param GtkWidget *button
+ * \return rien
+*/
 void on_menu_main(GtkWidget *button)
 {
     gtk_widget_hide(window_main);
     gtk_widget_show_all(window_chargement);
-
 }
 
-/*Permet de revenir sur la première fenêtre (chargement de partie ou nouvelle partie) à partir de la fenêtre finale (gagner)*/
+/**
+ * \fn void on_menu_win(GtkWidget *button)
+ * \brief Permet de revenir sur la première fenêtre (chargement de partie ou nouvelle partie) à partir de la fenêtre finale (gagner)
+ * \param GtkWidget *button
+ * \return rien
+*/
 void on_menu_win(GtkWidget *button)
 {
     gtk_widget_hide(window_win);
@@ -571,8 +634,12 @@ void on_menu_win(GtkWidget *button)
 
 }
 
-
-/*Permet de supprimer les caractères de type retour chariot ou espace en trop à la fin d'une chaîne de caractères*/
+/**
+ * \fn char *choppy( char *s )
+ * \brief Permet de supprimer les caractères de type retour chariot ou espace en trop à la fin d'une chaîne de caractères
+ * \param  char *s
+ * \return n
+*/
 char *choppy( char *s )
 {
     char *n = malloc( strlen( s ? s : "\n" ) );
@@ -582,8 +649,12 @@ char *choppy( char *s )
     return n;
 }
 
-
-/*Permet de revenir de récupérer un mot dans la matrice quand l'utilisateur a saisi les deux couples de coordonnées du mot*/
+/**
+ * \fn void mot_coords(char mat[N_TEST][N_TEST], char mot[N_TEST], point p1, point p2, info *b)
+ * \brief Permet de récupérer un mot dans la matrice quand l'utilisateur a saisi les deux couples de coordonnées du mot
+ * \param char mat[N_TEST][N_TEST], char mot[N_TEST], point p1, point p2, info *b
+ * \return rien
+*/
 void mot_coords(char mat[N_TEST][N_TEST], char mot[N_TEST], point p1, point p2, info *b)
 {
     int k = 0 ;
@@ -638,8 +709,12 @@ void mot_coords(char mat[N_TEST][N_TEST], char mot[N_TEST], point p1, point p2, 
     }
 }
 
-
-/*Permet de donner la position d'un mot dans une liste de mots*/
+/**
+ * \fn int position(mot_tire *liste, char *word)
+ * \brief Permet de donner la position d'un mot dans une liste de mots
+ * \param mot_tire *liste, char *word
+ * \return rien
+*/
 int position(mot_tire *liste, char *word)
 {
     for(int c = 0; c<N_TEST; c++)
@@ -652,7 +727,12 @@ int position(mot_tire *liste, char *word)
     return -1 ;
 }
 
-/*Permet de supprimer un mot dans une liste de mots*/
+/**
+ * \fn void supp_liste(mot_tire *liste, char *word, int nbr_mots)
+ * \brief Permet de supprimer un mot dans une liste de mots
+ * \param mot_tire *liste, char *word, int nbr_mots
+ * \return rien
+*/
 void supp_liste(mot_tire *liste, char *word, int nbr_mots)
 {
     int index = position(liste, word) ;
@@ -663,14 +743,12 @@ void supp_liste(mot_tire *liste, char *word, int nbr_mots)
     }
 }
 
-/*Permet d'associer des paramètres à chacun des boutons de la matrice de jeu.
 
-Quand un mot est trouvé, c'est cette fonction qui gère les variables globales qui permettent d'avancer dans le jeu.
-C'est ici, qu'on gère les listes de mots (trouvés et à trouver). Quand un mot est trouvé, on utiliser les fonctions
-précedemment définies pour supprimer/ajouter le mot dans la bonne liste.
-
-C'est ici que l'on met à jour les zones textes de la fenêtre principale (de jeu) au fur et à mesure.
-
+/**
+ * \fn void on_btn_clicked(GtkWidget *button, gpointer *data)
+ * \brief Permet d'associer des paramètres à chacun des boutons de la matrice de jeu. Quand un mot est trouvé, c'est cette fonction qui gère les variables globales qui permettent d'avancer dans le jeu. C'est ici, qu'on gère les listes de mots (trouvés et à trouver). Quand un mot est trouvé, on utiliser les fonctions précedemment définies pour supprimer/ajouter le mot dans la bonne liste. C'est ici que l'on met à jour les zones textes de la fenêtre principale (de jeu) au fur et à mesure.
+ * \param GtkWidget *button, gpointer *data
+ * \return rien
 */
 void on_btn_clicked(GtkWidget *button, gpointer *data)
 {
@@ -765,7 +843,7 @@ void on_btn_clicked(GtkWidget *button, gpointer *data)
 
             sec = ++sec_expired ;
 
-            h = (sec/3600); 
+            h = (sec/3600);
             m = (sec -(3600*h))/60;
             s = (sec -(3600*h)-(m*60));
 
@@ -780,8 +858,13 @@ void on_btn_clicked(GtkWidget *button, gpointer *data)
     gtk_label_set_label(label, str_coord);
 }
 
-/*Permet de comparer deux chaînes de caractères sans prendre en compte les espaces, retour chariots, etc.*/
 
+/**
+ * \fn int compare_words(char *w1, char *w2)
+ * \brief Permet de comparer deux chaînes de caractères sans prendre en compte les espaces, retour chariots, etc
+ * \param char *w1, char *w2
+ * \return same
+*/
 int compare_words(char *w1, char *w2)
 {
     int m = 0 ;
@@ -804,7 +887,12 @@ int compare_words(char *w1, char *w2)
     return same ;
 }
 
-/*Permet d'update le label au fur et à mesure que les secondes passent*/
+/**
+ * \fn static gboolean label_update(gpointer data)
+ * \brief Permet d'update le label au fur et à mesure que les secondes passent
+ * \param gpointer data
+ * \return same
+*/
 static gboolean label_update(gpointer data)
 {
     int sec, h, m, s;
@@ -814,7 +902,7 @@ static gboolean label_update(gpointer data)
 
     sec = ++sec_expired ;
 
-    h = (sec/3600); 
+    h = (sec/3600);
     m = (sec -(3600*h))/60;
     s = (sec -(3600*h)-(m*60));
 
@@ -824,7 +912,12 @@ static gboolean label_update(gpointer data)
 
 }
 
-/*Permet de mettre pause et de relancer le timer*/
+/**
+ * \fn static void pause_resume_timer (GtkWidget *button)
+ * \brief Permet de mettre pause et de relancer le timer
+ * \param GtkWidget *button
+ * \return same
+*/
 static void pause_resume_timer (GtkWidget *button)
 {
     (void)button;
