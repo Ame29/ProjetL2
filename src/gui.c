@@ -147,7 +147,7 @@ char *replaceWord(const char *s, const char *oldW, const char *newW)
         } 
     } 
   
-    // Making new string of enough length 
+    // Making new string of enough length.
     result = (char *)malloc(i + cnt * (newWlen - oldWlen) + 1); 
   
     i = 0; 
