@@ -1,7 +1,22 @@
+/**
+ * \file fonctionListe.c
+ * \brief Contient toutes les fonctions utiles à l'initialisation de la liste
+ * \author Asmae Bouhandi
+ * \version 1
+ * \date 13 mai 2020
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+
+/**
+ * \fn void afficher_liste(char ** liste_de_mot, int * nb_element)
+ * \brief affiche une liste de mots
+ * \param char ** liste_de_mot, int * nb_element
+ * \return rien
+ */
 
 void afficher_liste(char ** liste_de_mot, int * nb_element){
 	int i;
@@ -9,6 +24,13 @@ void afficher_liste(char ** liste_de_mot, int * nb_element){
 		printf("[%i] %s\n",i+1, *(liste_de_mot+i));
 
 }
+
+/**
+ * \fn int mot_dans_liste(char ** liste_de_mot, char * mot, int * nb_element)
+ * \brief vérifie la présence de la chaine de caractère "mot" dans "le tableau "liste_de_mot" de taille "nb_element", renvoie 1 si l'élément est présent, 0 sinon
+ * \param char ** liste_de_mot, char * mot, int * nb_element
+ * \return 0 ou 1
+ */
 
 //vérifie la présence de la chaine de caractère "mot" dans "le tableau "liste_de_mot" de taille "nb_element", renvoie 1 si l'élément est présent, 0 sinon.
 int mot_dans_liste(char ** liste_de_mot, char * mot, int * nb_element){
@@ -18,6 +40,13 @@ int mot_dans_liste(char ** liste_de_mot, char * mot, int * nb_element){
 			return 1;
 	return 0;
 }
+
+/**
+ * \fn void destruction_mot(char ** liste_de_mot, char * mot, int * nb_element)
+ * \brief détruit la chaine de caractère "mot" dans le tableau "liste_de_mot" de taille "nb_element" décrémente "nb_element" de 1
+ * \param char ** liste_de_mot, char * mot, int * nb_element
+ * \return rien
+ */
 
 //détruit la chaine de caractère "mot" dans le tableau "liste_de_mot" de taille "nb_element" décrémente "nb_element" de 1
 void destruction_mot(char ** liste_de_mot, char * mot, int * nb_element){
@@ -33,6 +62,14 @@ void destruction_mot(char ** liste_de_mot, char * mot, int * nb_element){
 		printf("ERREUR: %s n'est pas dans la liste.\n",mot);
 	}
 }
+
+
+/**
+ * \fn int main()
+ * \brief Test des fonctions mot_dans_liste, destruction_mot
+ * \param void
+ * \return rien
+ */
 
 //Test des fonctions mot_dans_liste, destruction_mot
 int main(){
