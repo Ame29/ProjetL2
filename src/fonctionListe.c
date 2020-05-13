@@ -1,8 +1,21 @@
+/**
+ * \file fonctionListe.c
+ * \brief Contient toutes les fonctions utiles à l'initialisation de la liste
+ * \author Asmae Bouhandi
+ * \version 1
+ * \date 13 mai 2020
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-
+/**
+ * \fn void afficher_liste(char ** liste_de_mot, int * nb_element)
+ * \brief affiche la matrice
+ * \param char ** liste_de_mot, int * nb_element
+ * \return rien
+ */
 void afficher_liste(char ** liste_de_mot, int * nb_element){
 	int i;
 	for(i=0; i < *(nb_element); i++)
@@ -10,7 +23,12 @@ void afficher_liste(char ** liste_de_mot, int * nb_element){
 
 }
 
-//vérifie la présence de la chaine de caractère "mot" dans "le tableau "liste_de_mot" de taille "nb_element", renvoie 1 si l'élément est présent, 0 sinon.
+/**
+ * \fn int mot_dans_liste(char ** liste_de_mot, char * mot, int * nb_element)
+ * \brief vérifie la présence de la chaine de caractère "mot" dans "le tableau "liste_de_mot" de taille "nb_element", renvoie 1 si l'élément est présent, 0 sinon
+ * \param char ** liste_de_mot, char * mot, int * nb_element
+ * \return 0 ou 1
+ */
 int mot_dans_liste(char ** liste_de_mot, char * mot, int * nb_element){
 	int i;
 	for(i=0; i < *(nb_element); i++)
@@ -19,7 +37,12 @@ int mot_dans_liste(char ** liste_de_mot, char * mot, int * nb_element){
 	return 0;
 }
 
-//détruit la chaine de caractère "mot" dans le tableau "liste_de_mot" de taille "nb_element" décrémente "nb_element" de 1
+/**
+ * \fn void destruction_mot(char ** liste_de_mot, char * mot, int * nb_element)
+ * \brief détruit la chaine de caractère "mot" dans le tableau "liste_de_mot" de taille "nb_element" décrémente "nb_element" de 1
+ * \param char ** liste_de_mot, char * mot, int * nb_element
+ * \return rien
+ */
 void destruction_mot(char ** liste_de_mot, char * mot, int * nb_element){
 	int i;
 	int j;
@@ -34,7 +57,12 @@ void destruction_mot(char ** liste_de_mot, char * mot, int * nb_element){
 	}
 }
 
-//Test des fonctions mot_dans_liste, destruction_mot
+/**
+ * \fn int main()
+ * \brief Test des fonctions mot_dans_liste, destruction_mot
+ * \param void
+ * \return rien
+ */
 int main(){
 	int * nb_elem= malloc(sizeof(int));
 	*nb_elem=3;

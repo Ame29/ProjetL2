@@ -6,10 +6,13 @@
  * \date 01 avril 2020
  */
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <time.h>
+
+#include "../lib/commun.h"
+#include "../lib/fonctionGrille.h"
 
 /**
  * \fn void WorkInProgress(void)
@@ -28,6 +31,33 @@ void WorkInProgress(void){
 	}while(choix!=1);
 	system("clear");
 
+}
+
+/**
+ * \fn void Game(char themefile[100], int difficulte)
+ * \brief lance une partie
+ * \param char themefile[100], int difficulte
+ * \return rien
+ */
+void Game(char themefile[100], int difficulte)
+{
+	srand(time(NULL));
+	int i;
+	//char themefile[50] = "./themes/theme_animal.txt" ;
+
+	// char mot[20] ;
+	// TirerMot(themefile, mot) ;
+
+	char mat[difficulte][difficulte];
+
+	initGrille(mat);
+
+	PlacerMot(mat, themefile);
+	affGrille(mat);
+	printf("\n");
+
+	voidToChar(mat);
+	affGrille(mat);
 }
 
 /**

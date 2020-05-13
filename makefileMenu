@@ -1,5 +1,5 @@
-bin/testMenu: menuAccueil.o fonctionMenu.o menuSolo.o menuCLM.o
-	gcc menuAccueil.o menuSolo.o fonctionMenu.o menuCLM.o -o testMenu
+bin/testMenu: menuAccueil.o fonctionMenu.o menuSolo.o menuCLM.o fonctionGrille.o
+	gcc menuAccueil.o menuSolo.o fonctionMenu.o menuCLM.o fonctionGrille.o -o testMenu
 
 menuAccueil.o: src/menuAccueil.c lib/fonctionMenu.h lib/menuSolo.h lib/menuCLM.h
 	gcc -o menuAccueil.o -c src/menuAccueil.c
@@ -7,11 +7,14 @@ menuAccueil.o: src/menuAccueil.c lib/fonctionMenu.h lib/menuSolo.h lib/menuCLM.h
 fonctionMenu.o: src/fonctionMenu.c lib/fonctionMenu.h
 	gcc -o fonctionMenu.o -c src/fonctionMenu.c
 
-menuSolo.o: src/menuSolo.c lib/fonctionMenu.h
+menuSolo.o: src/menuSolo.c lib/fonctionMenu.h lib/fonctionGrille.h
 	gcc -o menuSolo.o -c src/menuSolo.c
 
-menuCLM.o: src/menuCLM.c lib/fonctionMenu.h
+menuCLM.o: src/menuCLM.c lib/fonctionMenu.h lib/fonctionGrille.h
 	gcc -o menuCLM.o -c src/menuCLM.c
+
+fonctionGrille.o: src/fonctionGrille.c
+	gcc -o fonctionGrille.o -c src/fonctionGrille.c
 
 clean:
 	rm -rf *.o

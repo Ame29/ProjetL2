@@ -8,6 +8,9 @@ Contient toutes les fonctions utiles pour les menus.
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../lib/commun.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/fonction\+Grille.\+h\char`\"{}}\newline
 Include dependency graph for fonction\+Menu.\+c\+:
 % FIG 0
 \subsection*{Functions}
@@ -15,6 +18,8 @@ Include dependency graph for fonction\+Menu.\+c\+:
 \item 
 void \hyperlink{fonctionMenu_8c_a0321b7c34f248767259ff72996fc90ce}{Work\+In\+Progress} (void)
 \begin{DoxyCompactList}\small\item\em Affiche un message d\textquotesingle{}erreur. \end{DoxyCompactList}\item 
+void \hyperlink{fonctionMenu_8c_a5973d2a84108b5f07234a11c53a4f6b6}{Game} (char themefile\mbox{[}100\mbox{]}, int difficulte)
+\begin{DoxyCompactList}\small\item\em lance une partie \end{DoxyCompactList}\item 
 void \hyperlink{fonctionMenu_8c_ad9bff60d0e289c5c3dc0e59c5f6042bc}{description\+Solo} (void)
 \begin{DoxyCompactList}\small\item\em Décrit le fonctionnement du mode de jeu \char`\"{}solo\char`\"{}. \end{DoxyCompactList}\item 
 void \hyperlink{fonctionMenu_8c_a1d0f7bb9bd86d6811e00a8b21bbc8e73}{description\+C\+LM} (void)
@@ -67,6 +72,24 @@ Décrit le fonctionnement du mode de jeu \char`\"{}solo\char`\"{}.
 
 \begin{DoxyParams}{Parameters}
 {\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fonctionMenu_8c_a5973d2a84108b5f07234a11c53a4f6b6}\label{fonctionMenu_8c_a5973d2a84108b5f07234a11c53a4f6b6}} 
+\index{fonction\+Menu.\+c@{fonction\+Menu.\+c}!Game@{Game}}
+\index{Game@{Game}!fonction\+Menu.\+c@{fonction\+Menu.\+c}}
+\subsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily void Game (\begin{DoxyParamCaption}\item[{char}]{themefile\mbox{[}100\mbox{]},  }\item[{int}]{difficulte }\end{DoxyParamCaption})}
+
+
+
+lance une partie 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & themefile\mbox{[}100\mbox{]}, int difficulte \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

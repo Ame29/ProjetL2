@@ -1,5 +1,4 @@
 /**
- * \include commun.h
  * \file commun.h
  * \brief header contenant les élément utiles aux autres fichier.
  * \author Quentin Bellanger
@@ -21,13 +20,13 @@
 */
 #define FACILE 10
 /**
-* \def MOYEN 12
+* \def MOYEN 14
 */
-#define MOYEN 12
+#define MOYEN 14
 /**
-* \def DIFFICILE 14
+* \def DIFFICILE 16
 */
-#define DIFFICILE 14
+#define DIFFICILE 16
 
 
 #endif

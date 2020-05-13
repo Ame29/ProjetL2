@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['voidtochar',['voidToChar',['../fonctionGrille_8c.html#a7129b8b4d648a4af7eec64a5134439ce',1,'voidToChar(char matrice[N_TEST][N_TEST]):&#160;fonctionGrille.c'],['../fonctionGrille_8h.html#a7129b8b4d648a4af7eec64a5134439ce',1,'voidToChar(char matrice[N_TEST][N_TEST]):&#160;fonctionGrille.c']]]
+  ['point',['point',['../structpoint.html',1,'']]],
+  ['position',['position',['../gui_8c.html#aec90eec0aec242f14a0b60004dfc9e86',1,'position(mot_tire *liste, char *word):&#160;gui.c'],['../gui_8h.html#aec90eec0aec242f14a0b60004dfc9e86',1,'position(mot_tire *liste, char *word):&#160;gui.c']]]
 ];

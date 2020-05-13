@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Projet de L2: src/fonctionGrille.c File Reference</title>
+<title>Projet de L2: Mots Mélées: src/fonctionGrille.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Projet de L2
+   <div id="projectname">Projet de L2: Mots Mélées
    </div>
   </td>
  </tr>
@@ -63,6 +63,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">fonctionGrille.c File Reference</div>  </div>
@@ -76,7 +77,9 @@ $(function() {
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;ctype.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="commun_8h_source.html">../lib/commun.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fonctionGrille_8h_source.html">../lib/fonctionGrille.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for fonctionGrille.c:</div>
 <div class="dyncontent">
@@ -84,6 +87,21 @@ Include dependency graph for fonctionGrille.c:</div>
 <!-- MAP 0 -->
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a70c4f60ec098824a71ccc93f24bc2aba"><td class="memItemLeft" align="right" valign="top"><a id="a70c4f60ec098824a71ccc93f24bc2aba"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NORD</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a70c4f60ec098824a71ccc93f24bc2aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b0c8cbef6499914e6d0f585f0116cb7"><td class="memItemLeft" align="right" valign="top"><a id="a1b0c8cbef6499914e6d0f585f0116cb7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OUEST</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a1b0c8cbef6499914e6d0f585f0116cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169513b888a6712245e05a736f4616de"><td class="memItemLeft" align="right" valign="top"><a id="a169513b888a6712245e05a736f4616de"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EST</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a169513b888a6712245e05a736f4616de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7807d538f00fe755d872b96634821cf3"><td class="memItemLeft" align="right" valign="top"><a id="a7807d538f00fe755d872b96634821cf3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SUD</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a7807d538f00fe755d872b96634821cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a427152203ef5fcb375070d6620d4f920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonctionGrille_8c.html#a427152203ef5fcb375070d6620d4f920">initGrille</a> (char matrice[N_TEST][N_TEST])</td></tr>
@@ -96,18 +114,27 @@ Functions</h2></td></tr>
 <tr class="memdesc:af411fce46388648066f379d96f490281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie un nombre entre 0 et limMax-1.  <a href="#af411fce46388648066f379d96f490281">More...</a><br /></td></tr>
 <tr class="separator:af411fce46388648066f379d96f490281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7129b8b4d648a4af7eec64a5134439ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonctionGrille_8c.html#a7129b8b4d648a4af7eec64a5134439ce">voidToChar</a> (char matrice[N_TEST][N_TEST])</td></tr>
-<tr class="memdesc:a7129b8b4d648a4af7eec64a5134439ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplace chaque caractère '*' d'une matrice de caractère par une lettre minuscule aléatoire.  <a href="#a7129b8b4d648a4af7eec64a5134439ce">More...</a><br /></td></tr>
+<tr class="memdesc:a7129b8b4d648a4af7eec64a5134439ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplace chaque caractère '.' d'une matrice de caractère par une lettre minuscule aléatoire.  <a href="#a7129b8b4d648a4af7eec64a5134439ce">More...</a><br /></td></tr>
 <tr class="separator:a7129b8b4d648a4af7eec64a5134439ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a433b3d8c776a3f6e1092962acf6a8231"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonctionGrille_8c.html#a433b3d8c776a3f6e1092962acf6a8231">tirerMot</a> (char *nomFichier, char *motTire)</td></tr>
-<tr class="memdesc:a433b3d8c776a3f6e1092962acf6a8231"><td class="mdescLeft">&#160;</td><td class="mdescRight">affecte à un pointeur sur char un mot du fichier * nomFichier  <a href="#a433b3d8c776a3f6e1092962acf6a8231">More...</a><br /></td></tr>
-<tr class="separator:a433b3d8c776a3f6e1092962acf6a8231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af38e92503cf6dd2f961a47b33b3cf2e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonctionGrille_8c.html#af38e92503cf6dd2f961a47b33b3cf2e4">PlacerMot</a> (char matrix[N_TEST][N_TEST])</td></tr>
-<tr class="memdesc:af38e92503cf6dd2f961a47b33b3cf2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">place un mot dans la grille  <a href="#af38e92503cf6dd2f961a47b33b3cf2e4">More...</a><br /></td></tr>
-<tr class="separator:af38e92503cf6dd2f961a47b33b3cf2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc0cc6ca2492d585569cb1407fde27a"><td class="memItemLeft" align="right" valign="top"><a id="addc0cc6ca2492d585569cb1407fde27a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>TirerMot</b> (char *nomFichier, char *motTire)</td></tr>
+<tr class="separator:addc0cc6ca2492d585569cb1407fde27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e3784c535e5c4981781296c32b9f85a"><td class="memItemLeft" align="right" valign="top"><a id="a9e3784c535e5c4981781296c32b9f85a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>RechercheTableau</b> (int *tab, int n)</td></tr>
+<tr class="separator:a9e3784c535e5c4981781296c32b9f85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7504d366c91a70704f0260d829f6ddd6"><td class="memItemLeft" align="right" valign="top"><a id="a7504d366c91a70704f0260d829f6ddd6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ajoutListe</b> (<a class="el" href="structmot__tire.html">mot_tire</a> liste_mot[N_TEST+1], char *mot)</td></tr>
+<tr class="separator:a7504d366c91a70704f0260d829f6ddd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8b35d1879b287550dc9f3f02718adb"><td class="memItemLeft" align="right" valign="top"><a id="a9f8b35d1879b287550dc9f3f02718adb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>upper_string</b> (char *s)</td></tr>
+<tr class="separator:a9f8b35d1879b287550dc9f3f02718adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e22c2b5057d3b7b954bf86f95efb34"><td class="memItemLeft" align="right" valign="top"><a id="a03e22c2b5057d3b7b954bf86f95efb34"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PlacerMot</b> (char matrix[N_TEST][N_TEST], char *themefile, <a class="el" href="structmot__tire.html">mot_tire</a> liste_mot[N_TEST+1])</td></tr>
+<tr class="separator:a03e22c2b5057d3b7b954bf86f95efb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contient toutes les fonctions utiles à l'initialisation de la grille de jeu. </p>
-<dl class="section author"><dt>Author</dt><dd>Quentin Bellanger </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Asmae Bouhandi </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>01 avril 2020 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -192,70 +219,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af38e92503cf6dd2f961a47b33b3cf2e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af38e92503cf6dd2f961a47b33b3cf2e4">&#9670;&nbsp;</a></span>PlacerMot()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PlacerMot </td>
-          <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>matrix</em>[N_TEST][N_TEST]</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>place un mot dans la grille </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">char</td><td>matrix[N_TEST][N_TEST] </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>rien </dd></dl>
-
-</div>
-</div>
-<a id="a433b3d8c776a3f6e1092962acf6a8231"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a433b3d8c776a3f6e1092962acf6a8231">&#9670;&nbsp;</a></span>tirerMot()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int tirerMot </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>nomFichier</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>motTire</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>affecte à un pointeur sur char un mot du fichier * nomFichier </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">char</td><td>* nomFichier, char * motTire </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>1 si un problème survient, 0 sinon </dd></dl>
-
-</div>
-</div>
 <a id="a7129b8b4d648a4af7eec64a5134439ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7129b8b4d648a4af7eec64a5134439ce">&#9670;&nbsp;</a></span>voidToChar()</h2>
 
@@ -272,7 +235,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remplace chaque caractère '*' d'une matrice de caractère par une lettre minuscule aléatoire. </p>
+<p>Remplace chaque caractère '.' d'une matrice de caractère par une lettre minuscule aléatoire. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">char</td><td>matrice[N_TEST][N_TEST] </td></tr>

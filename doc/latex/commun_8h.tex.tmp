@@ -20,20 +20,15 @@ This graph shows which files directly or indirectly include this file\+:
 \#define {\bfseries F\+A\+C\+I\+LE}~10
 \item 
 \mbox{\Hypertarget{commun_8h_a64e404cf60c6b192dacc09e00f56751b}\label{commun_8h_a64e404cf60c6b192dacc09e00f56751b}} 
-\#define {\bfseries M\+O\+Y\+EN}~12
+\#define {\bfseries M\+O\+Y\+EN}~14
 \item 
 \mbox{\Hypertarget{commun_8h_a0d7c79f8aed3b4fa33a592c007807808}\label{commun_8h_a0d7c79f8aed3b4fa33a592c007807808}} 
-\#define {\bfseries D\+I\+F\+F\+I\+C\+I\+LE}~14
+\#define {\bfseries D\+I\+F\+F\+I\+C\+I\+LE}~16
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 header contenant les élément utiles aux autres fichier. 
-
-
-\begin{DoxyCodeInclude}
-\end{DoxyCodeInclude}
-
 
 \begin{DoxyAuthor}{Author}
 Quentin Bellanger 

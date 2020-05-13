@@ -8,10 +8,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+
+#include "../lib/commun.h"
 #include "../lib/fonctionMenu.h"
-#define FACILE 10
-#define MOYEN 14
-#define DIFFICILE 18
+
+int difficulte ;
 
 /**
  * \fn void menuCLMTheme(void)
@@ -26,7 +27,7 @@ void menuCLMTheme(void){
 		printf("\t1 - Animaux\n");
 		printf("\t2 - Nourriture\n");
 		printf("\t3 - Ville\n");
-		printf("\t4 - Metier\n");
+		printf("\t4 - Metiers\n");
 		printf("\t5 - Retour\n");
 		printf("\tVotre choix : ");
 		scanf("%i", &choix);
@@ -35,7 +36,7 @@ void menuCLMTheme(void){
 
 		//Traitement du choix de l'utilisateur
 		switch(choix){
-      case 1: WorkInProgress(); break;
+      		case 1: WorkInProgress(); break;
 			case 2: WorkInProgress(); break;
 			case 3:	WorkInProgress(); break;
 			case 4:	WorkInProgress(); break;

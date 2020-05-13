@@ -8,10 +8,12 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include "../lib/commun.h"
 #include "../lib/fonctionMenu.h"
-#define FACILE 10
-#define MOYEN 14
-#define DIFFICILE 18
+
+int difficulte ;
+char themefile[50] ;
 
 /**
  * \fn void menuSoloTheme(void)
@@ -35,15 +37,17 @@ void menuSoloTheme(){
 
 		//Traitement du choix de l'utilisateur
 		switch(choix){
-      case 1: WorkInProgress(); break;
-			case 2: WorkInProgress(); break;
-			case 3:	WorkInProgress(); break;
-			case 4:	WorkInProgress(); break;
+      		case 1: strcpy(themefile, "./themes/theme_animal.txt") ; break;
+			case 2: strcpy(themefile, "./themes/theme_nourriture.txt") ; break;
+			case 3:	strcpy(themefile, "./themes/theme_ville.txt") ; break;
+			case 4:	strcpy(themefile, "./themes/theme_metier.txt") ; break;
 			case 5: break;
 			default: printf("Erreur: votre choix doit etre compris entre 1 et 5\n");
 		}
 	}
-	while(choix!=5);
+	while(choix>5 || choix<1);
+
+	Game(themefile, difficulte) ;
 }
 
 /**
@@ -67,14 +71,20 @@ void menuSoloDifficulte(){
 
 		//Traitement du choix de l'utilisateur
 		switch(choix){
-      case 1: menuSoloTheme(); break;
-			case 2: menuSoloTheme(); break;
-			case 3:	menuSoloTheme(); break;
+      		case 1:
+      			difficulte = FACILE ;
+      			menuSoloTheme(); break;
+			case 2:
+				difficulte = MOYEN ;
+				menuSoloTheme(); break;
+			case 3:
+				difficulte = DIFFICILE ;
+				menuSoloTheme(); break;
 			case 4: break;
 			default: printf("Erreur: votre choix doit etre compris entre 1 et 4\n");
 		}
 	}
-	while(choix!=4);
+	while(choix>4 || choix<1);
 }
 
 /**
@@ -98,7 +108,7 @@ void menuSoloSauvegarde(){
 
 		//Traitement du choix de l'utilisateur
 		switch(choix){
-      case 1: descriptionSolo(); break;
+      		case 1: descriptionSolo(); break;
 			case 2: menuSoloDifficulte(); break;
 			case 3:	WorkInProgress(); break;
 			case 4: break;

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['descriptionclm',['descriptionCLM',['../fonctionMenu_8c.html#a1d0f7bb9bd86d6811e00a8b21bbc8e73',1,'fonctionMenu.c']]],
-  ['descriptionsolo',['descriptionSolo',['../fonctionMenu_8c.html#ad9bff60d0e289c5c3dc0e59c5f6042bc',1,'descriptionSolo(void):&#160;fonctionMenu.c'],['../fonctionMenu_8h.html#ad9bff60d0e289c5c3dc0e59c5f6042bc',1,'descriptionSolo(void):&#160;fonctionMenu.c']]]
+  ['charger',['charger',['../gui_8c.html#acd459c47886840fdeb9b302f47e49908',1,'charger(GtkFileChooserButton *chooser):&#160;gui.c'],['../gui_8h.html#acd459c47886840fdeb9b302f47e49908',1,'charger(GtkFileChooserButton *chooser):&#160;gui.c']]],
+  ['choppy',['choppy',['../gui_8c.html#ab3bbae53ac0f6955e96bb59649a9bc66',1,'choppy(char *s):&#160;gui.c'],['../gui_8h.html#add4248a87dae18312c4f753a155f98cd',1,'choppy(char *s):&#160;gui.c']]],
+  ['compare_5fwords',['compare_words',['../gui_8c.html#a2b17db1681c1c11628f458717d12935e',1,'compare_words(char *w1, char *w2):&#160;gui.c'],['../gui_8h.html#a2b17db1681c1c11628f458717d12935e',1,'compare_words(char *w1, char *w2):&#160;gui.c']]],
+  ['create_5fboard',['create_board',['../gui_8c.html#a9ef825946ad1e015efed1825e1f7b94f',1,'gui.c']]]
 ];
