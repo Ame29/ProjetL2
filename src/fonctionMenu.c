@@ -6,7 +6,6 @@
  * \date 01 avril 2020
  */
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -34,6 +33,12 @@ void WorkInProgress(void){
 
 }
 
+/**
+ * \fn void Game(char themefile[100], int difficulte)
+ * \brief lance une partie
+ * \param char themefile[100], int difficulte
+ * \return rien
+ */
 void Game(char themefile[100], int difficulte)
 {
 	srand(time(NULL));
