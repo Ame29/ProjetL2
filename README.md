@@ -2,7 +2,7 @@
 
 ## Portabilité
 
-Unix
+Linux
 
 ## Pré-requis
 
