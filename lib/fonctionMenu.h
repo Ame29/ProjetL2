@@ -6,6 +6,8 @@
  * \date 01 avril 2020
  */
 
+
+
 #ifndef FUNCTION_USUELLE
 #define FUNCTION_USUELLE
 
