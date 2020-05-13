@@ -1,5 +1,4 @@
 /**
- * \include commun.h
  * \file commun.h
  * \brief header contenant les élément utiles aux autres fichier.
  * \author Quentin Bellanger
