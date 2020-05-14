@@ -29,7 +29,7 @@
 
 /**
  * \fn void initGrille(char matrice[N_TEST][N_TEST])
- * \brief Remplit une matrice du caractère avec le caractère '*'
+ * \brief Remplit une matrice du caractère avec le caractère '.'
  * \param char matrice[N_TEST][N_TEST]
  * \return rien
  */
