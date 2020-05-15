@@ -11,7 +11,7 @@
  * \brief Systeme d'aide au joueur
  * \author Guillaume Briffault
  * \version 1
- * \date 4 mai 2020
+ * \date 10 mai 2020
  */
 
 int nombreAleatoire(int nbrMot)
